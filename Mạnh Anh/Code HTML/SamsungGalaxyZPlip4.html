@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samsung Galaxy Z Flip4</title>
+    <link rel="stylesheet" href="../Code CSS/astyle2.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img
+          src="../Ảnh/z6322794975136_70f7ef48558d457e4384cf3304b8fc8d.jpg"
+          width="60"
+          height="60"
+          alt=""
+        />
+        <strong>KTSShop.com.vn</strong>
+      </div>
+      <div class="dropdown-menu">
+        <button>☰ Danh mục</button>
+        <div class="menu-content">
+          <a href="ĐienThoai.html">Điện thoại</a>
+          <a href="../../Tra/HThtml/laptop.html">Laptop</a>
+          <a href="../../Vinh/Html/DienLanhShop.html">Điện máy</a>
+          <a href="../../Khánh/Html/phukien.html">Phụ kiện</a>
+          <a href="../../Hiếu/HTML/dogiadung.html">Đồ gia dụng</a>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm"
+        />
+        <button id="searchButton">Tìm kiếm</button>
+      </div>
+
+      <div class="icons">
+        <a href="dangnhap.html" style="color: white; text-decoration: none">
+          <div>Đăng nhập</div>
+        </a>
+        <a href="ShoppingCart.html" style="color: white; text-decoration: none">
+          <div class="cart-icon">
+            🛒 Giỏ hàng
+            <div class="cart-count">0</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <a>Mọi thiết bị công nghệ bạn cần – Tất cả chỉ bằng một cú nhấp chuột!</a>
+      <a>Bảo hành chính hãng, sale nhiều, giảm sâu</a>
+      <a
+        >Mua iPhone 16 Pro Max chính hãng, giá tốt, nhiều ưu đãi tại
+        KTSShop.com.vn</a
+      >
+    </div>
+    <div class="breadcrumb-title-container">
+      <div class="breadcrumb">
+        <a href="Demo.html" style="color: blue; text-decoration: none"
+          >Trang chủ</a
+        >
+        /
+        <a href="ĐienThoai.html" style="color: blue; text-decoration: none"
+          >Điện thoại</a
+        >
+        /
+        <a
+          href="SamsungGalaxyZPlip4.html"
+          style="color: black; text-decoration: none"
+          >Samsung Galaxy Z Flip4 5G</a
+        >
+      </div>
+      <div
+        class="product"
+        data-id="2"
+        data-name="Samsung Galaxy Z Flip4"
+        data-price="9990000"
+        data-image="../Ảnh/2022_8_10_637957658354316100_samsung-galaxy-z-flip4-tim-1.jpg"
+      >
+        <div class="product-image">
+          <div class="carousel">
+            <div class="carousel-images">
+              <img
+                src="../Ảnh/2022_8_10_637957658354316100_samsung-galaxy-z-flip4-tim-1.jpg"
+                width="1000"
+                height="253"
+                alt=""
+              />
+              <img
+                src="../Ảnh/2022_8_10_637957685772850661_samsung-galaxy-z-flip4-vang-1.jpg"
+                width="1000"
+                height="253"
+                alt=""
+              />
+              <img
+                src="../Ảnh/2022_8_10_637957695058070860_samsung-galaxy-z-flip4-xanh-1.jpg"
+                width="1000"
+                height="253"
+                alt=""
+              />
+              <img
+                src="../Ảnh/2022_8_10_637957667752370272_samsung-galaxy-z-flip4-xam-1.jpg"
+                width="1000"
+                height="253"
+                alt=""
+              />
+            </div>
+            <div class="carousel-buttons">
+              <button id="prev">&#10094;</button>
+              <button id="next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-title">Samsung Galaxy Z Flip4 5G 128GB</div>
+
+          <div class="product-options">
+            <label for="storage">Dung lượng:</label>
+            <select id="storage" onchange="updatePrice()">
+              <option value="128GB">128GB</option>
+            </select>
+          </div>
+          <div class="product-options">
+            <label for="color">Màu sắc:</label>
+            <select id="color" onchange="updatePrice()">
+              <option value="Tím">Tím</option>
+              <option value="Vàng">Vàng</option>
+            </select>
+          </div>
+          <div class="product-price">
+            <span class="old-price" id="old-price">23.990.000 ₫</span>
+            <span class="new-price" id="price">9.990.000₫</span>
+          </div>
+          <div class="buttons">
+            <a href="ThanhToan.html">
+              <button onclick="buyNow()">Mua ngay</button></a
+            >
+            <button onclick="addToCart()">Thêm vào giỏ hàng</button>
+          </div>
+          <div
+            class="fb-like"
+            data-href="https://developers.facebook.com/docs/plugins/"
+            data-width="200"
+            data-layout=""
+            data-action=""
+            data-size=""
+            data-share="true"
+          ></div>
+        </div>
+        <div class="product-details">
+          <div class="product-gifts">
+            <h3>Quà tặng và ưu đãi khi mua hàng</h3>
+            <ul>
+              <li>✔️ Cường lực miễn phí - Tặng kèm khi mua hàng</li>
+              <li>✔️ Ốp lưng chính hãng</li>
+              <li>✔️ Hàng chính hãng - Bảo hành 12 tháng</li>
+              <li>✔️ Giao hàng toàn quốc</li>
+              <li>
+                ✔️ Trả góp 0% lãi suất, MIỄN PHÍ chuyển đổi kì hạn 3 - 6 tháng
+                qua thẻ tín dụng
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="custom-divider">&nbsp;&nbsp;</div>
+      <div class="product-container">
+        <div class="product-specs">
+          <h3>Thông số nổi bật</h3>
+          <div class="spec-item">
+            <span>Chip:</span>
+            <span>Snapdragon 8+ Gen 1</span>
+          </div>
+          <div class="spec-item">
+            <span>Kích thước màn hình:</span>
+            <span>6.7"</span>
+          </div>
+          <div class="spec-item">
+            <span>Thời lượng pin:</span>
+            <span>3700 mAh</span>
+          </div>
+          <div class="spec-item">
+            <span>Kết nối NFC:</span>
+            <span>Có</span>
+          </div>
+          <div class="spec-item">
+            <span>Công nghệ màn hình:</span>
+            <span>Dynamic AMOLED 2X</span>
+          </div>
+          <div class="spec-item">
+            <span>Tần số quét:</span>
+            <span>120Hz</span>
+          </div>
+          <div class="spec-item">
+            <span>Độ phân giải:</span>
+            <span>1080 x 2636 pixel</span>
+          </div>
+          <div class="spec-item">
+            <span>Chất liệu:</span>
+            <span>Kim loại</span>
+          </div>
+          <div class="spec-item">
+            <span>Trọng lượng:</span>
+            <span>183g</span>
+          </div>
+          <div class="spec-item">
+            <span>Camera trước:</span>
+            <span>12MP</span>
+          </div>
+          <div class="spec-item">
+            <span>Camera sau:</span>
+            <span>12MP + 12MP</span>
+          </div>
+        </div>
+
+        <div class="product-video">
+          <h3>Video liên quan</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/c285IBwjsCI"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+      <div class="product-description">
+        <h2>Mô tả sản phẩm</h2>
+        <h3>Chiếc smartphone thời trang nhất bạn từng thấy</h3>
+        <p>
+          Nhỏ gọn và tinh tế, Samsung Galaxy Z Flip4 là chiếc smartphone sinh ra
+          dành cho các tín đồ thời trang. Cơ chế gập duyên dáng, bộ màu sắc nhẹ
+          nhàng và loạt chức năng quay chụp sẽ làm say lòng những người yêu cái
+          đẹp. Mọi chi tiết trên Galaxy Z Flip 4 đều được căn chỉnh tinh tế và
+          hướng đến mục tiêu tạo nên chiếc smartphone thời trang nhất từ trước
+          đến nay. Từ khung kim loại bóng bẩy đến mặt lưng nhám thời thượng đều
+          cho thấy kỹ nghệ chế tác xuất sắc, phát huy vẻ đẹp sản phẩm đến mức
+          tối đa. Với Samsung Galaxy Z Flip4 bạn sẽ tìm thấy những gam màu thời
+          thượng như Tím Bora, Xám Graphite, Hồng Champagne và Xanh Lovebird.
+        </p>
+        <div id="them-thong-tin" class="an">
+          <img
+            src="../Ảnh/Mo-ta-samsung-galaxy-z-flip4-0.jpg"
+            width="600"
+            height="340"
+            alt=""
+          />
+          <h3>Linh hoạt khi gập mở, cơ động để mang theo</h3>
+          <p>
+            Sở hữu màn hình lớn 6.7 inch nhưng Samsung Z Flip 4 vẫn đảm bảo yếu
+            tố cơ động khi di chuyển cũng như độ gọn gàng lúc cầm nắm. Nhờ cơ
+            chế gập độc đáo, chủ nhân chiếc điện thoại dễ dàng thu gọn một nửa
+            chiều dài thân máy để bỏ túi và mang theo. Cấu trúc đặc biệt này
+            giúp sản phẩm đem lại trải nghiệm đặc biệt không thể tìm thấy ở dòng
+            điện thoại nào khác.
+          </p>
+          <img
+            src="../Ảnh/Mo-ta-samsung-galaxy-z-flip4-3.jpg"
+            width="564"
+            height="234"
+            alt=""
+          />
+          <h3>Thoải mái gập mở tới 200.000 lần</h3>
+          <p>
+            Màn hình gập mở 6.7 inch của Galaxy Z Flip4 phải trải qua quy trình
+            thẩm định khắc nghiệt nhất nhằm chắc chắn sẽ duy trì độ bền không
+            đổi trong 200.000 lần gấp máy. Ngoài ra, nhờ những nguyên liệu được
+            lựa chọn cầu kỳ như kính cường lực Gorilla Glass Victus+, nhôm Armor
+            Aluminium, chiếc điện thoại sẽ khiến bạn bất ngờ về khả năng chống
+            xước và chịu lực. Đem đến cấu trúc vững vàng ẩn trong một diện mạo
+            thời trang.
+          </p>
+          <img
+            src="../Ảnh/Mo-ta-samsung-galaxy-z-flip4-6.jpg"
+            width="600"
+            height="350"
+            alt=""
+          />
+          <h3>Mạnh mẽ, bền bỉ, chuẩn chống nước IPX8</h3>
+          <p>
+            Nhẹ nhàng và tinh tế, nhưng Galaxy Z Flip4 vẫn bền bỉ đáng ngạc
+            nhiên. Một trong những thành tựu lớn nhất từ Samsung là việc hãng
+            thành công đưa chức năng IPX8 (cao nhất của chuẩn chống nước) lên
+            chiếc điện thoại này. Tiêu chuẩn này cho phép Samsung Galaxy Z Flip4
+            sống tốt ở mực nước sâu 1,5 mét trong 30 phút mà không gặp vấn đề
+            gì.
+          </p>
+        </div>
+        <button id="xemThemBtn" class="button1">Xem Thêm ▼</button>
+      </div>
+    </div>
+
+    <div class="rating-container">
+      <h2>Khách hàng nói về sản phẩm</h2>
+      <div class="average-rating" id="avg-rating">4.5</div>
+      <p id="total-reviews">12 lượt đánh giá</p>
+      <div class="stars" id="star-display">☆☆☆☆☆</div>
+
+      <div>
+        <div class="rating-bar">
+          <span>5⭐</span>
+          <div class="bar"><div class="bar-fill" id="bar-5"></div></div>
+          <span id="count-5">7</span>
+        </div>
+        <div class="rating-bar">
+          <span>4⭐</span>
+          <div class="bar"><div class="bar-fill" id="bar-4"></div></div>
+          <span id="count-4">1</span>
+        </div>
+        <div class="rating-bar">
+          <span>3⭐</span>
+          <div class="bar"><div class="bar-fill" id="bar-3"></div></div>
+          <span id="count-3">1</span>
+        </div>
+        <div class="rating-bar">
+          <span>2⭐</span>
+          <div class="bar"><div class="bar-fill" id="bar-2"></div></div>
+          <span id="count-2">0</span>
+        </div>
+        <div class="rating-bar">
+          <span>1⭐</span>
+          <div class="bar"><div class="bar-fill" id="bar-1"></div></div>
+          <span id="count-1">0</span>
+        </div>
+      </div>
+
+      <div class="rate-buttons">
+        <button>Đánh giá sản phẩm</button>
+        <button onclick="rate(5)">5☆</button>
+        <button onclick="rate(4)">4☆</button>
+        <button onclick="rate(3)">3☆</button>
+        <button onclick="rate(2)">2☆</button>
+        <button onclick="rate(1)">1☆</button>
+      </div>
+      <b>Bình luận</b>
+      <div class="comment-box">
+        <input
+          type="text"
+          placeholder="Nhập nội dung bình luận..."
+          maxlength="3000"
+        />
+        <button class="btn-send">Gửi bình luận</button>
+      </div>
+    </div>
+    <div class="chatbox">
+      <div class="chat-header">
+        <span>💬 Hỗ trợ khách hàng</span>
+        <button class="chat-close">✖</button>
+      </div>
+      <div class="chat-body">
+        <div class="chat-messages"></div>
+        <div class="chat-input-container">
+          <input
+            type="text"
+            class="chat-input"
+            placeholder="Nhập tin nhắn..."
+          />
+          <button class="chat-send">Gửi</button>
+        </div>
+      </div>
+    </div>
+    <button class="chat-toggle">💬</button>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-column">
+          <h3>Chăm sóc khách hàng</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Thông tin về website</h3>
+          <p>Website bán các sản phẩm kỹ thuật số</p>
+          <p>📍 Địa chỉ: Trường Đại Học Tài chính - Ngân hàng Hà Nội</p>
+          <p>31 Dịch Vọng Hậu - Cầu Giấy - Hà Nội</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Phương Thức Thanh Toán</h3>
+          <p>💳 Thanh toán qua thẻ: Visa, MasterCard</p>
+          <p>🏦 Chuyển khoản ngân hàng</p>
+          <p>📲 Ví điện tử: Momo, ZaloPay</p>
+          <p>💰 Thanh toán khi nhận hàng (COD)</p>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <p>© 2025 KTSShop.com.vn. Tất cả quyền được bảo lưu.</p>
+        <p>Website được phát triển bởi nhóm 6 môn TMVNHDT. Liên hệ:</p>
+        <p>
+          <strong>Trưởng nhóm:</strong> Nguyễn Mạnh Anh - MSV: 2254800104 -
+          Email:
+          <a href="mailto:nguyenmanhanh04@gmail.com"
+            >nguyenmanhanh04@gmail.com</a
+          >
+          - SĐT: <a href="tel:0395806898">0395806898</a> - Điện Thoại
+        </p>
+      </div>
+    </footer>
+    <script src="../Code JS/ajs3.js"></script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v22.0"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laptop</title>
+    <link rel="stylesheet" href="../Tcss/LT.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="../Ảnh/logo.jpg" width="76" height="48" alt="" />
+        <strong>KTSShop.com.vn</strong>
+      </div>
+      <div class="dropdown-menu">
+        <button>Danh mục</button>
+        <div class="menu-content">
+          <a href="../../Mạnh Anh/Code HTML/ĐienThoai.html">Điện thoại</a>
+          <a href="laptop.html">Laptop</a>
+          <a href="../../Vinh/Html/DienLanhShop.html">Điện máy</a>
+          <a href="../../Khánh/Html/phukien.html">Phụ kiện</a>
+          <a href="../../Hiếu/HTML/dogiadung.html">Đồ gia dụng</a>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm"
+        />
+        <button id="searchButton">Tìm kiếm</button>
+      </div>
+      <div class="icons">
+        <a
+          href="../../Mạnh Anh/Code HTML/dangnhap.html"
+          style="color: white; text-decoration: none"
+        >
+          <div>Đăng nhập</div>
+        </a>
+
+        <a
+          href="../../Mạnh Anh/Code HTML/ShoppingCart.html"
+          style="color: white; text-decoration: none"
+        >
+          <div class="cart-icon">
+            🛒 Giỏ hàng
+            <div class="cart-count">0</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <a href="#"
+        >Mọi thiết bị công nghệ bạn cần – Tất cả chỉ bằng một cú nhấp chuột!</a
+      >
+      <a href="#">Bảo hành chính hãng, sale nhiều, giảm sâu</a>
+      <a href="#"
+        >Mua iPhone 16 Pro Max chính hãng, giá tốt, nhiều ưu đãi tại
+        KTSShop.com.vn</a
+      >
+    </div>
+
+    <div class="breadcrumb-title-container">
+      <div class="breadcrumb">
+        <a
+          href="../../Mạnh Anh/Code HTML/Demo.html"
+          style="color: blue; font-weight: bold"
+          >Trang chủ </a
+        >/
+        <a href="laptop.html">Laptop</a>
+      </div>
+      <div class="page-title">Laptop</div>
+
+      <div class="category-line"></div>
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="../Ảnh/banner1.png" width="1000" height="254" alt="" />
+          <img
+            src="../Ảnh/H1_1440x242_bbb46ff687.png"
+            width="1000"
+            height="252"
+            alt=""
+          />
+        </div>
+        <div class="carousel-buttons">
+          <button id="prev">&#10094;</button>
+          <button id="next">&#10095;</button>
+        </div>
+      </div>
+    </div>
+    <div class="filter-sort-container">
+      <div class="filter-container">
+        <label for="priceFilter">Lọc theo giá:</label>
+        <select id="priceFilter" onchange="filterProducts()">
+          <option value="all">Tất cả giá</option>
+          <option value="duoi10">Dưới 10 triệu</option>
+          <option value="10-20">Từ 10 đến 20 triệu</option>
+          <option value="20-30">Từ 20 đến 30 triệu</option>
+          <option value="tren30">Trên 30 triệu</option>
+        </select>
+      </div>
+
+      <div class="sort-container">
+        <label for="sortOrder">Sắp xếp:</label>
+        <select id="sortOrder" onchange="sortProducts()">
+          <option value="featured">Mới nhất</option>
+          <option value="asc">Giá tăng dần</option>
+          <option value="desc">Giá giảm dần</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="product-list">
+      <div class="product" data-price="15990000 ">
+        <a href="Asusvivobook.html">
+          <img src="../Ảnh/lt4.png" alt="" />
+        </a>
+        <div class="price">15.990.000 ₫</div>
+        <div class="old-price">17.990.000 ₫</div>
+        <div class="discount">Giảm giá: -11%</div>
+        <div class="description">
+          Asus Vivobook 14 OLED A1405ZA-KM264W i5 12500H
+        </div>
+      </div>
+      <div class="product" data-price="15490000">
+        <a href="HP.html">
+          <img src="../Ảnh/lt2.jpg" width="150" height="150" alt="" />
+        </a>
+        <div class="price">15.490.000 ₫</div>
+        <div class="old-price">19.690.000 ₫</div>
+        <div class="discount">Giảm giá: -21%</div>
+        <div class="description">HP 245 G10 R7 7730U (8F157PA)</div>
+      </div>
+      <div class="product" data-price="26090000">
+        <a href="MacBookAir.html">
+          <img src="../Ảnh/lt3.png" width="150" height="150" alt="" />
+        </a>
+        <div class="price">26.090.000 ₫</div>
+        <div class="old-price">27.990.000 ₫</div>
+        <div class="discount">Giảm giá: -7%</div>
+        <div class="description">
+          MacBook Air 13 M3 2024 8CPU/8GPU/16GB/256GB
+        </div>
+      </div>
+      <div class="product" data-price="16490000">
+        <a href="Dell.html">
+          <img src="../Ảnh/lt1.png" width="150" height="150" alt="" />
+        </a>
+        <div class="price">16.490.000 ₫</div>
+        <div class="old-price">17.290.000 ₫</div>
+        <div class="discount">Giảm giá: -5%</div>
+        <div class="description">Laptop Dell Inspiron N3520 i5 1235U</div>
+      </div>
+      <div class="product" data-price="20490000">
+        <a href="Asusgaming.html">
+          <img src="../Ảnh/lt5.png" width="150" height="150" alt="" />
+        </a>
+        <div class="price">20.490.000 ₫</div>
+        <div class="old-price">22.490.000 ₫</div>
+        <div class="discount">Giảm giá: -9%</div>
+        <div class="description">Asus TUF Gaming FX507ZC4-HN095W i5 12500H</div>
+      </div>
+    </div>
+    <div class="chatbox">
+      <div class="chat-header">
+        <span>💬 Hỗ trợ khách hàng</span>
+        <button class="chat-close">✖</button>
+      </div>
+      <div class="chat-body">
+        <div class="chat-messages"></div>
+        <div class="chat-input-container">
+          <input
+            type="text"
+            class="chat-input"
+            placeholder="Nhập tin nhắn..."
+          />
+          <button class="chat-send">Gửi</button>
+        </div>
+      </div>
+    </div>
+    <button class="chat-toggle">💬</button>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-column">
+          <h3>Chăm sóc khách hàng</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Thông tin về website</h3>
+          <p>Website bán các sản phẩm kỹ thuật số</p>
+          <p>📍 Địa chỉ: Trường Đại Học Tài chính - Ngân hàng Hà Nội</p>
+          <p>31 Dịch Vọng Hậu - Cầu Giấy - Hà Nội</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Phương Thức Thanh Toán</h3>
+          <p>💳 Thanh toán qua thẻ: Visa, MasterCard</p>
+          <p>🏦 Chuyển khoản ngân hàng</p>
+          <p>📲 Ví điện tử: Momo, ZaloPay</p>
+          <p>💰 Thanh toán khi nhận hàng (COD)</p>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <p>© 2025 KTSShop.com.vn. Tất cả quyền được bảo lưu.</p>
+        <p>Website được phát triển bởi nhóm 6 môn TMVNHDT. Liên hệ:</p>
+        <p>
+          Thành viên: Nguyễn Hương Trà - MSV: 2251010620 - Email:
+          huongtra1209004@gmail.com - SĐT: 0961896110
+        </p>
+      </div>
+    </footer>
+
+    <script src="../nhtjs/LT.js"></script>
+  </body>
+</html>

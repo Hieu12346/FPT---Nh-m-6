@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tìm kiếm</title>
+    <link rel="stylesheet" href="../Code CSS/astyle4.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img
+          src="../Ảnh/z6322794975136_70f7ef48558d457e4384cf3304b8fc8d.jpg"
+          width="60"
+          height="60"
+          alt=""
+        />
+        <strong>KTSShop.com.vn</strong>
+      </div>
+      <div class="dropdown-menu">
+        <button>☰ Danh mục</button>
+        <div class="menu-content">
+          <a href="ĐienThoai.html">Điện thoại</a>
+          <a href="../../Tra/HThtml/laptop.html">Laptop</a>
+          <a href="../../Vinh/Html/DienLanhShop.html">Điện máy</a>
+          <a href="../../Khánh/Html/phukien.html">Phụ kiện</a>
+          <a href="../../Hiếu/HTML/dogiadung.html">Đồ gia dụng</a>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm"
+        />
+        <button id="searchButton">Tìm kiếm</button>
+      </div>
+      <div class="icons">
+        <a href="dangnhap.html" style="color: white; text-decoration: none">
+          <div>Đăng nhập</div>
+        </a>
+        <a href="ShoppingCart.html" style="color: white; text-decoration: none">
+          <div class="cart-icon">
+            🛒 Giỏ hàng
+            <div class="cart-count">0</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <a>Mọi thiết bị công nghệ bạn cần – Tất cả chỉ bằng một cú nhấp chuột!</a>
+      <a>Bảo hành chính hãng, sale nhiều, giảm sâu</a>
+      <a
+        >Mua iPhone 16 Pro Max chính hãng, giá tốt, nhiều ưu đãi tại
+        KTSShop.com.vn</a
+      >
+    </div>
+
+    <div class="breadcrumb-title-container">
+      <div class="breadcrumb">
+        <a href="Demo.html" style="color: blue; text-decoration: none"
+          >Trang chủ</a
+        >
+        /
+        <a href="Search.html">Tìm kiếm</a>
+      </div>
+      <div class="page-title">Kết quả tìm kiếm</div>
+      <div class="category-line"></div>
+    </div>
+
+    <div class="filter-sort-container">
+      <div class="filter-container">
+        <label for="brandFilter">Danh mục:</label>
+        <select id="brandFilter" onchange="filterProducts()">
+          <option value="all">Tất cả</option>
+          <option value="Điện thoại">Điện thoại</option>
+          <option value="Laptop">Laptop</option>
+          <option value="Điện máy">Điện máy</option>
+          <option value="Phụ kiện">Phụ kiện</option>
+          <option value="Đồ gia dụng">Đồ gia dụng</option>
+        </select>
+      </div>
+
+      <div class="filter-container">
+        <label for="priceFilter">Lọc theo giá:</label>
+        <select id="priceFilter" onchange="filterProducts()">
+          <option value="all">Tất cả giá</option>
+          <option value="duoi10">Dưới 10 triệu</option>
+          <option value="10-20">Từ 10 đến 20 triệu</option>
+          <option value="20-30">Từ 20 đến 30 triệu</option>
+          <option value="tren30">Trên 30 triệu</option>
+        </select>
+      </div>
+
+      <div class="sort-container">
+        <label for="sortOrder">Sắp xếp:</label>
+        <select id="sortOrder" onchange="sortProducts()">
+          <option value="featured">Mới nhất</option>
+          <option value="asc">Giá tăng dần</option>
+          <option value="desc">Giá giảm dần</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="product-list">
+      <div
+        class="product"
+        data-price="32890000"
+        data-brand="Điện thoại"
+        onclick="location.href='iphone16ProMax.html'"
+      >
+        <img
+          src="../Ảnh/iphone_16_pro_max_bda3030b4b.png"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">32.890.000 ₫</div>
+        <div class="old-price">34.990.000 ₫</div>
+        <div class="discount">Giảm giá: -6%</div>
+        <div class="description">iPhone 16 Pro Max 8GB 256GB</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="9990000"
+        data-brand="Điện thoại"
+        onclick="location.href='SamsungGalaxyZPlip4.html'"
+      >
+        <img
+          src="../Ảnh/2022_8_10_637957658354316100_samsung-galaxy-z-flip4-tim-1.jpg"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">9.990.000 ₫</div>
+        <div class="old-price">23.990.000 ₫</div>
+        <div class="discount">Giảm giá: -58%</div>
+        <div class="description">Samsung Galaxy Z Flip4 5G 128GB</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="10990000"
+        data-brand="Điện thoại"
+        onclick="location.href='OppoReno13F.html'"
+      >
+        <img
+          src="../Ảnh/oppo_reno13_f_5g_tim_5_858ba5c2ad (1).png"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">10.990.000 ₫</div>
+        <div class="old-price">12.990.000 ₫</div>
+        <div class="discount">Giảm giá: -15%</div>
+        <div class="description">Oppo Reno 13F 5G 12GB 256GB</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="14990000"
+        data-brand="Điện thoại"
+        onclick="location.href='Xiaomi14TPro.html'"
+      >
+        <img
+          src="../Ảnh/xiaomi_14t_pro_titan_gray_1_45b1866e10 (1).png"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">14.990.000 ₫</div>
+        <div class="old-price">17.990.000 ₫</div>
+        <div class="discount">Giảm giá: -17%</div>
+        <div class="description">Xiaomi 14T Pro 12GB 512GB</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="7990000"
+        data-brand="Điện thoại"
+        onclick="location.href='Realme13+.html'"
+      >
+        <img
+          src="../Ảnh/realme_13_plus_5g_tim_5_4ed930bfe7 (1).png"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">7.990.000 ₫</div>
+        <div class="old-price">9.490.000 ₫</div>
+        <div class="discount">Giảm giá: -16%</div>
+        <div class="description">Realme 13+ 5G 8GB 256GB</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="10790000"
+        data-brand="Điện máy"
+        onclick="location.href='../../Vinh/Html/TuLanh.html'"
+      >
+        <img src="../Ảnh/tu-lanh.png" alt="" />
+        <div class="price">10.790.000 ₫</div>
+        <div class="old-price">17.590.000 ₫</div>
+        <div class="discount">Giảm giá: -41%</div>
+        <div class="description">Tủ lạnh LG inverter 315 Lít GN-M312BL</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="5990000"
+        data-brand="Điện máy"
+        onclick="location.href='../../Vinh/Html/Tivi.html'"
+      >
+        <img src="../Ảnh/ti-vi.png" width="150" height="150" alt="" />
+        <div class="price">5.990.000 ₫</div>
+        <div class="old-price">6.490.000 ₫</div>
+        <div class="discount">Giảm giá: -8%</div>
+        <div class="description">Xiaomi Google TV 43 inch Full HD</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="6990000"
+        data-brand="Điện máy"
+        onclick="location.href='../../Vinh/Html/MayGiat.html'"
+      >
+        <img src="../Ảnh/May-giat-fpt.png" width="150" height="150" alt="" />
+        <div class="price">7.690.000 ₫</div>
+        <div class="old-price">8.690.000 ₫</div>
+        <div class="discount">Giảm giá: -12%</div>
+        <div class="description">Máy giặt Toshiba Inverter 9.5 kg</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="4990000"
+        data-brand="Điện máy"
+        onclick="location.href='../../Vinh/Html/DieuHoa.html'"
+      >
+        <img src="../Ảnh/Dieu-Hoa.jpg" width="150" height="150" alt="" />
+        <div class="price">4.990.000 ₫</div>
+        <div class="old-price">11.990.000 ₫</div>
+        <div class="discount">Giảm giá: -43%</div>
+        <div class="description">Máy lạnh Midea Inverter 1 HP MSAF6-10CDN8</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+
+      <div
+        class="product"
+        data-price="690000"
+        data-brand="Phụ kiện"
+        onclick="location.href='../../Khánh/Html/Tainghehonor.html'"
+      >
+        <img
+          src="../Ảnh/tai_nghe_bluetooth_honor_choice_earbuds_x7e_trang_1_cbf19c597e.jpg"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">690.000 ₫</div>
+        <div class="old-price">1.290.000 ₫</div>
+        <div class="discount">Giảm giá: -47%</div>
+        <div class="description">
+          Tai nghe Bluetooth HONOR Choice Earbuds X7e
+        </div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="499000"
+        data-brand="Phụ kiện"
+        onclick="location.href='../../Khánh/Html/TaingheAlpha.html'"
+      >
+        <img
+          src="../Ảnh/Tai_nghe_Bluetooth_nhet_tai_Alpha_Works_CURVE_300_Den_1_247e78b880.jpg"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">499.000 ₫</div>
+        <div class="old-price">599.000 ₫</div>
+        <div class="discount">Giảm giá: -17%</div>
+        <div class="description">Tai nghe Bluetooth Alpha Works CURVE300</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="1286000"
+        data-brand="Phụ kiện"
+        onclick="location.href='../../Khánh/Html/Op.html'"
+      >
+        <img
+          src="../Ảnh/Clear_Case_with_Magsafe_e255c5f04a.png"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">1.286.000 ₫</div>
+        <div class="old-price">1.429.000 ₫</div>
+        <div class="discount">Giảm giá: -10%</div>
+        <div class="description">
+          Ốp lưng iPhone 16 Pro Max Clear Case with Magsafe
+        </div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="15990000"
+        data-brand="Laptop"
+        onclick="location.href='../../Tra/HThtml/Asusvivobook.html'"
+      >
+        <img src="../Ảnh/lt4.png" alt="" />
+        <div class="price">15.990.000 ₫</div>
+        <div class="old-price">17.990.000 ₫</div>
+        <div class="discount">Giảm giá: -11%</div>
+        <div class="description">Asus Vivobook 14 OLED A1405ZA-KM264W</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="15490000"
+        data-brand="Laptop"
+        onclick="location.href='../../Tra/HThtml/HP.html'"
+      >
+        <img src="../Ảnh/lt2.jpg" width="150" height="150" alt="" />
+        <div class="price">15.490.000 ₫</div>
+        <div class="old-price">19.690.000 ₫</div>
+        <div class="discount">Giảm giá: -21%</div>
+        <div class="description">HP 245 G10 R7 7730U (8F157PA)</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="26090000"
+        data-brand="Laptop"
+        onclick="location.href='../../Tra/HThtml/MacbookAir.html'"
+      >
+        <img src="../Ảnh/lt3.png" width="150" height="150" alt="" />
+        <div class="price">26.090.000 ₫</div>
+        <div class="old-price">27.990.000 ₫</div>
+        <div class="discount">Giảm giá: -7%</div>
+        <div class="description">MacBook Air 13 M3 2024 16GB/256GB</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="16490000"
+        data-brand="Laptop"
+        onclick="location.href='../../Tra/HThtml/Dell.html'"
+      >
+        <img src="../Ảnh/lt1.png" width="150" height="150" alt="" />
+        <div class="price">16.490.000 ₫</div>
+        <div class="old-price">17.290.000 ₫</div>
+        <div class="discount">Giảm giá: -5%</div>
+        <div class="description">Laptop Dell Inspiron N3520 i5 1235U</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="20490000"
+        data-brand="Laptop"
+        onclick="location.href='../../Tra/HThtml/Asusgaming.html'"
+      >
+        <img src="../Ảnh/lt5.png" width="150" height="150" alt="" />
+        <div class="price">20.490.000 ₫</div>
+        <div class="old-price">22.490.000 ₫</div>
+        <div class="discount">Giảm giá: -9%</div>
+        <div class="description">Asus TUF Gaming FX507ZC4-HN095W</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="2790000"
+        data-brand="Đồ gia dụng"
+        onclick="location.href='../../Hiếu/HTML/lovisong.html'"
+      >
+        <img src="../Ảnh/2.jpg" width="150" height="150" alt="" />
+        <div class="price">2.790.000 ₫</div>
+        <div class="old-price">3.050.000 ₫</div>
+        <div class="discount">Giảm giá: -9%</div>
+        <div class="description">Lò vi sóng có nướng Toshiba 23 lít</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="3190000"
+        data-brand="Đồ gia dụng"
+        onclick="location.href='../../Hiếu/HTML/noichienkhongdau.html'"
+      >
+        <img
+          src="../Ảnh/2022_3_28_637840717466216887_noi-chien-khong-dau-dien-tu-kangaroo-15-lit-kg15af3a-bac-1 (1).jpg"
+          alt=""
+        />
+        <div class="price">3.190.000 ₫</div>
+        <div class="old-price">6.790.000 ₫</div>
+        <div class="discount">Giảm giá: -53%</div>
+        <div class="description">Nồi chiên không dầu điện tử Kangaroo 15L</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="3490000"
+        data-brand="Đồ gia dụng"
+        onclick="location.href='../../Hiếu/HTML/maysuoi.html'"
+      >
+        <img src="../Ảnh/0.jpg" width="150" height="150" alt="" />
+        <div class="price">3.490.000 ₫</div>
+        <div class="old-price">4.890.000₫</div>
+        <div class="discount">Giảm giá: -29%</div>
+        <div class="description">Máy sưởi gốm Kangaroo KGFH08</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="18490000"
+        data-brand="Đồ gia dụng"
+        onclick="location.href='../../Hiếu/HTML/LoaBL.html'"
+      >
+        <img src="../Ảnh/332.jpg" width="150" height="150" alt="" />
+        <div class="price">18.490.000 ₫</div>
+        <div class="old-price">21.900.000 ₫</div>
+        <div class="discount">Giảm giá: -28%</div>
+        <div class="description">Loa Bluetooth JBL Partybox 710</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="29990000"
+        data-brand="Đồ gia dụng"
+        onclick="location.href='../../Hiếu/HTML/Robothutbui.html'"
+      >
+        <img src="../Ảnh/331.png" width="150" height="150" alt="" />
+        <div class="price">29.990.000 ₫</div>
+        <div class="old-price">39.990.000 ₫</div>
+        <div class="discount">Giảm giá: -25%</div>
+        <div class="description">Robot hút bụi lau nhà Dreame X50 Ultra</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="2549000"
+        data-brand="Phụ kiện"
+        onclick="location.href='../../Khánh/Html/Loa.html'"
+      >
+        <img
+          src="../Ảnh/2024_5_8_638507663083492456_QD35-black.jpg"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">2.549.000 ₫</div>
+        <div class="old-price">2.690.000 ₫</div>
+        <div class="discount">Giảm giá: -5%</div>
+        <div class="description">Loa Bluetooth Edifier QD35 2255H</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="799000"
+        data-brand="Phụ kiện"
+        onclick="location.href='../../Khánh/Html/Pin.html'"
+      >
+        <img
+          src="../Ảnh/2024_1_3_638399042457584676_z5002264419794_1858bff82fcb2caf75c73e6387949edd.jpg"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">799.000 ₫</div>
+        <div class="old-price">999.000 ₫</div>
+        <div class="discount">Giảm giá: -20%</div>
+        <div class="description">Pin sạc dự phòng 20000mAh QC 3.0/PD</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+    </div>
+	  
+    <div class="pagination">
+      <button id="prevPage">&laquo;</button>
+      <span id="pageInfo">1</span>
+      <button id="nextPage">&raquo;</button>
+    </div>
+    <div class="chatbox">
+      <div class="chat-header">
+        <span>💬 Hỗ trợ khách hàng</span>
+        <button class="chat-close">✖</button>
+      </div>
+      <div class="chat-body">
+        <div class="chat-messages"></div>
+        <div class="chat-input-container">
+          <input
+            type="text"
+            class="chat-input"
+            placeholder="Nhập tin nhắn..."
+          />
+          <button class="chat-send">Gửi</button>
+        </div>
+      </div>
+    </div>
+    <button class="chat-toggle">💬</button>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-column">
+          <h3>Chăm sóc khách hàng</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Thông tin về website</h3>
+          <p>Website bán các sản phẩm kỹ thuật số</p>
+          <p>📍 Địa chỉ: Trường Đại Học Tài chính - Ngân hàng Hà Nội</p>
+          <p>31 Dịch Vọng Hậu - Cầu Giấy - Hà Nội</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Phương Thức Thanh Toán</h3>
+          <p>💳 Thanh toán qua thẻ: Visa, MasterCard</p>
+          <p>🏦 Chuyển khoản ngân hàng</p>
+          <p>📲 Ví điện tử: Momo, ZaloPay</p>
+          <p>💰 Thanh toán khi nhận hàng (COD)</p>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <p>© 2025 KTSShop.com.vn. Tất cả quyền được bảo lưu.</p>
+        <p>Website được phát triển bởi nhóm 6 môn TMVNHDT. Liên hệ:</p>
+        <p>
+          <strong>Trưởng nhóm:</strong> Nguyễn Mạnh Anh - MSV: 2254800104 -
+          Email:
+          <a href="mailto:nguyenmanhanh04@gmail.com"
+            >nguyenmanhanh04@gmail.com</a
+          >
+          - SĐT: <a href="tel:0395806898">0395806898</a> - Điện Thoại
+        </p>
+      </div>
+    </footer>
+    <script src="../Code JS/ajs8.js"></script>
+  </body>
+</html>

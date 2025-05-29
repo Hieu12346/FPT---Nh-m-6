@@ -1,0 +1,556 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #b40000;
+  color: white;
+  padding: 15px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.header .search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .search-bar input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .search-bar button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header .search-bar button:hover {
+  background-color: #555;
+}
+
+.header .icons {
+  display: flex;
+  align-items: center;
+}
+
+.header .icons div {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.header .dropdown-menu {
+  position: relative;
+  margin-left: 20px;
+}
+
+.header .dropdown-menu button {
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.header .dropdown-menu .menu-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 8px 0;
+}
+
+.header .dropdown-menu .menu-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.header .dropdown-menu .menu-content a:hover {
+  background-color: #f0f0f0;
+}
+.menu-content a:focus,
+.menu-content a:active {
+  background-color: rgba(255, 165, 0, 0.2);
+}
+
+.dropdown-menu:hover .menu-content {
+  display: block;
+}
+.menu {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+.cart-container {
+  width: 80%;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart {
+  background-color: #b40000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: #8c0000;
+}
+
+.cart-count.updated {
+  transform: scale(1.2);
+}
+
+.breadcrumb-title-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 10px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #333;
+}
+
+.breadcrumb a:hover {
+  color: #b40000;
+}
+
+.category-line {
+  width: 100%;
+  height: 2px;
+  background-color: #b40000;
+  margin: 20px 0;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+  padding: 20px;
+}
+
+.container-1 {
+  width: 60%;
+  margin: 0;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.container-2 {
+  width: 40%;
+  margin: 0;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  color: #b40000;
+}
+input,
+select,
+.button {
+  width: 80%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
+.button-container-1 {
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  gap: 20px; /* Khoảng cách giữa các nút */
+  margin-top: 15px; /* Tạo khoảng cách phía trên */
+}
+.button-apply {
+  background-color: #b40000;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-apply:hover {
+  background-color: #b40000;
+  transform: scale(1.05);
+}
+
+/* Nút Xác nhận đơn */
+.button-confirm {
+  background-color: #b40000;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-confirm:hover {
+  background-color: #8c0000;
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 300px;
+  padding: 15px;
+}
+
+.footer h3 {
+  color: #f4b400;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-info {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #555;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-info p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.filter-sort-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 15px 0;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.filter-container,
+.sort-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-container select,
+.sort-container select {
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+.chatbox {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.chatbox.active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.chat-header {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px 20px 0 0;
+}
+
+.chat-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 20px 20px;
+}
+
+.chat-input {
+  width: 75%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.chat-send {
+  width: 20%;
+  padding: 8px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.chat-send:hover {
+  background: #0056b3;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.chat-message.user {
+  flex-direction: row-reverse;
+}
+
+.chat-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.chat-content {
+  background: #f1f1f1;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.chat-message.user .chat-content {
+  background: #007bff;
+  color: white;
+}
+
+.chat-name {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  text-align: left;
+}
+
+.chat-nameuser {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  text-align: right;
+}
+
+.chat-toggle {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  background: #007bff;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-toggle:hover {
+  background: #0056b3;
+}
+
+.order-items {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.order-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.order-item-info {
+  flex: 1;
+}
+
+.order-item-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.order-item-info strong {
+  color: #b40000;
+}

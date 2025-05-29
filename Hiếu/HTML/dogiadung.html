@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ gia dụng</title>
+    <link rel="stylesheet" href="../HCSS/giadung.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../anh/anh/480119606_2353868115012094_3681363280069979819_n.jpg" width="76" height="48" alt=""/>
+            <strong>KTSShop.com.vn</strong>
+        </div>
+		<div class="dropdown-menu">
+            <button>Danh mục</button>
+            <div class="menu-content">
+                <a href="../../Mạnh Anh/Code HTML/ĐienThoai.html">Điện thoại</a>
+                <a href="../../Tra/HThtml/laptop.html">Laptop</a>
+                <a href="../../Vinh/Html/DienLanhShop.html">Điện máy</a>
+                <a href="../../Khánh/Html/phukien.html">Phụ kiện</a>
+				<a href="dogiadung.html">Đồ gia dụng</a>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm">
+            <button id="searchButton">Tìm kiếm</button>
+        </div>
+        <div class="icons">
+            <div id="loginBtn">
+                <a href="../../Mạnh Anh/Code HTML/dangnhap.html" style="color: white; text-decoration: none;">Đăng nhập</a>
+            </div>
+            <a href="../../Mạnh Anh/Code HTML/ShoppingCart.html" style="color: white; text-decoration: none;">
+                <div class="cart-icon">🛒 Giỏ hàng
+                    <div class="cart-count">0</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="menu">
+        <a href="#">Mọi thiết bị công nghệ bạn cần – Tất cả chỉ bằng một cú nhấp chuột!</a>
+		<a href="#">Bảo hành chính hãng, sale nhiều, giảm sâu</a>
+		<a href="#">Mua iPhone 16 Pro Max chính hãng, giá tốt, nhiều ưu đãi tại KTSShop.com.vn</a>
+    </div>
+
+    <div class="breadcrumb-title-container">
+        <div class="breadcrumb">
+            <a href="../../Mạnh Anh/Code HTML/Demo.html" style="color: blue;font-weight: bold;">Trang chủ </a>/
+			<a href="dogiadung.html">Đồ gia dụng</a>
+        </div>
+        <div class="page-title">Đồ gia dụng</div>
+
+        <div class="category-line"></div>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="../anh/anh/H1_1440x242_92966c7d99.png" width="1000" height="254" alt=""/> 
+		    	<img src="../anh/anh/H1_1440x242_bafe6f54ce.png" width="1000" height="252" alt=""/> 
+			</div>
+            <div class="carousel-buttons">
+                <button id="prev">&#10094;</button>
+                <button id="next">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <div class="filter-sort-container">
+		<div class="filter-container">
+			<label for="priceFilter">Lọc theo giá:</label>
+			<select id="priceFilter" onchange="filterProducts()">
+				<option value="all">Tất cả giá</option>
+				<option value="duoi10">Dưới 10 triệu</option>
+				<option value="10-20">Từ 10 đến 20 triệu</option>
+				<option value="20-30">Từ 20 đến 30 triệu</option>
+				<option value="tren30">Trên 30 triệu</option>
+			</select>
+		</div>
+
+		<div class="sort-container">
+			<label for="sortOrder">Sắp xếp:</label>
+			<select id="sortOrder" onchange="sortProducts()">
+				<option value="featured">Mới nhất</option>
+				<option value="asc">Giá tăng dần</option>
+				<option value="desc">Giá giảm dần</option>
+			</select>
+		</div>
+	</div>
+
+    <div class="product-list">
+        <div class="product"data-price="2790000">
+			<a href="lovisong.html">
+        		<img src="../anh/anh/2.jpg" width="150" height="150" alt=""/>
+			</a>
+			<div class="price">2.790.000 ₫</div>
+            <div class="old-price">3.050.000 ₫</div>
+            <div class="discount">Giảm giá: -9%</div>
+            <div class="description">Lò vi sóng có nướng Toshiba 23 lít ER-SGS23(S1)VN</div>
+        </div>
+        <div class="product" data-price="3190000">
+			<a href="noichienkhongdau.html">
+        		<img src="../anh/anh/11.jpg" width="150" height="150" alt=""/>
+			</a>
+            <div class="price">3.190.000 ₫</div>
+            <div class="old-price">6.790.000 ₫</div>
+            <div class="discount">Giảm giá: -53%</div>
+            <div class="description">Nồi chiên không dầu điện tử Kangaroo 15L KG15AF3A</div>
+        </div>
+        <div class="product"data-price="3490000">
+			<a href="maysuoi.html">
+        		<img src="../anh/anh/0.jpg" width="150" height="150" alt=""/>
+			</a>
+			<div class="price">3.490.000 ₫</div>
+            <div class="old-price">4.890.000₫</div>
+            <div class="discount">Giảm giá: -29%</div>
+            <div class="description">Máy sưởi gốm Kangaroo KGFH08</div>
+        </div>
+        <div class="product" data-price="18490000">
+			<a href="LoaBL.html">
+        		<img src="../anh/anh/332.jpg" width="150" height="150" alt=""/>
+			</a>
+			<div class="price">18.490.000 ₫</div>
+            <div class="old-price">21.900.000 ₫</div>
+            <div class="discount">Giảm giá: -28%</div>
+            <div class="description">Loa Bluetooth JBL Partybox 710</div>
+        </div>
+        <div class="product" data-price="29990000">
+			<a href="Robothutbui.html">
+        		<img src="../anh/anh/331.png" width="150" height="150" alt=""/>
+			</a>
+			<div class="price">29.990.000 ₫</div>
+            <div class="old-price">39.990.000 ₫</div>
+            <div class="discount">Giảm giá: -25%</div>
+            <div class="description">Robot hút bụi lau nhà Dreame X50 Ultra</div>
+        </div>
+       
+    </div>
+
+    <div class="chatbox">
+		<div class="chat-header">
+			<span>💬 Hỗ trợ khách hàng</span>
+			<button class="chat-close">✖</button>
+		</div>
+		<div class="chat-body">
+			<div class="chat-messages"></div>
+				<div class="chat-input-container">
+					<input type="text" class="chat-input" placeholder="Nhập tin nhắn...">
+					<button class="chat-send">Gửi</button>
+				</div>
+		</div>
+	</div>
+	<button class="chat-toggle">💬</button>
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-column">
+				<h3>Chăm sóc khách hàng</h3>
+				<ul>
+					<li><a href="#">Chính sách bảo hành</a></li>
+					<li><a href="#">Chính sách đổi trả</a></li>
+					<li><a href="#">Chính sách bảo mật</a></li>
+					<li><a href="#">Chính sách vận chuyển</a></li>
+					<li><a href="#">Điều khoản sử dụng</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Thông tin về website</h3>
+            <p>Website bán các sản phẩm kỹ thuật số</p>
+            <p>📍 Địa chỉ: Trường Đại Học Tài chính - Ngân hàng Hà Nội</p>
+            <p>31 Dịch Vọng Hậu - Cầu Giấy - Hà Nội</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Phương Thức Thanh Toán</h3>
+            <p>💳 Thanh toán qua thẻ: Visa, MasterCard</p>
+            <p>🏦 Chuyển khoản ngân hàng</p>
+            <p>📲 Ví điện tử: Momo, ZaloPay</p>
+            <p>💰 Thanh toán khi nhận hàng (COD)</p>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        <p>© 2025 KTSShop.com.vn. Tất cả quyền được bảo lưu.</p>
+        <p>Website được phát triển bởi nhóm 6 môn TMVNHDT. Liên hệ:</p>
+        <p>
+          <strong>Thành viên:</strong> Nguyễn Trung Hiếu - MSV: 2254800004 -
+          Email:
+          <a href="mailto:nguyentrunghieu252004@gmail.com"
+            >nguyentrunghieu252004@gmail.com</a
+          >
+          - SĐT: 0358495610
+        </p> 
+      </div>
+    </footer>
+    </div>
+</footer>
+<script src="../HJS/gd.js"></script>
+</body>
+</html>

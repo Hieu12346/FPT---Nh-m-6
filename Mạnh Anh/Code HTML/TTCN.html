@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Thông tin tài khoản</title>
+    <link rel="stylesheet" href="../Code CSS/TTCN.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="../Ảnh/logo.jpg" width="76" height="48" alt="" />
+        <strong>KTSShop.com.vn</strong>
+      </div>
+      <div class="dropdown-menu">
+        <button>Danh mục</button>
+        <div class="menu-content">
+          <a href="ĐienThoai.html">Điện thoại</a>
+          <a href="../../Tra/HThtml/laptop.html">Laptop</a>
+          <a href="../../Vinh/Html/DienLanhShop.html">Điện máy</a>
+          <a href="../../Khánh/Html/phukien.html">Phụ kiện</a>
+          <a href="../../Hiếu/HTML/dogiadung.html">Đồ gia dụng</a>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm"
+        />
+        <button id="searchButton">Tìm kiếm</button>
+      </div>
+      <div class="icons">
+        <a href="dangnhap.html" style="color: white; text-decoration: none">
+          <div>Đăng nhập</div>
+        </a>
+
+        <a href="ShoppingCart.html" style="color: white; text-decoration: none">
+          <div class="cart-icon">
+            🛒 Giỏ hàng
+            <div class="cart-count">0</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="menu">
+      <a href="#"
+        >Mọi thiết bị công nghệ bạn cần – Tất cả chỉ bằng một cú nhấp chuột!</a
+      >
+      <a href="#">Bảo hành chính hãng, sale nhiều, giảm sâu</a>
+      <a href="#"
+        >Mua iPhone 16 Pro Max chính hãng, giá tốt, nhiều ưu đãi tại
+        KTSShop.com.vn</a
+      >
+    </div>
+
+    <div class="breadcrumb-title-container">
+      <div class="breadcrumb">
+        <a href="Demo.html" style="color: blue; font-weight: bold">Trang chủ </a
+        >/
+        <a href="TTCN.html">Tài khoản</a>
+      </div>
+      <div class="page-title">Thông tin cá nhân</div>
+      <div class="category-line"></div>
+      <div class="bg-gray-900 text-white">
+        <div class="container mx-auto p-6 flex gap-6 justify-center">
+          <aside class="w-1/3 bg-gray-800 p-6 rounded-xl">
+            <div class="flex items-center gap-4 mb-6">
+              <img
+                src="../Ảnh/avt.jpg"
+                alt="Avatar"
+                class="w-14 h-14 rounded-full"
+              />
+              <div>
+                <h2 class="text-lg font-semibold">Quy Khach</h2>
+              </div>
+            </div>
+            <div class="bg-red-600 p-4 rounded-lg text-center mb-6">
+              <p>Quý khách chưa là thành viên tại KTSShop</p>
+              <button class="bg-red-500 px-4 py-2 rounded mt-2">
+                Quan tâm ngay
+              </button>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg space-y-4">
+              <a href="#" class="block bg-gray-600 p-3 rounded-lg text-center"
+                >Đơn hàng của tôi</a
+              >
+              <a href="#" class="block bg-gray-600 p-3 rounded-lg text-center"
+                >Khách hàng thân thiết</a
+              >
+              <a href="#" class="block bg-gray-600 p-3 rounded-lg text-center"
+                >Số địa chỉ nhận hàng</a
+              >
+              <br />
+              <form
+                class="login-form"
+                action="http://localhost:8080/WebLoginSystem/LogoutServlet"
+                method="post"
+              >
+                <button id="logoutButton">Đăng xuất</button>
+              </form>
+            </div>
+          </aside>
+          <main class="w-2/3 bg-gray-800 p-6 rounded-xl text-center">
+            <h2 class="text-xl font-semibold mb-4">Thông tin cá nhân</h2>
+            <div class="flex flex-col items-center gap-4 mb-6">
+              <img
+                src="../Ảnh/avt.jpg"
+                alt="Profile Picture"
+                class="w-16 h-16 rounded-full"
+              />
+              <div id="info-display" class="text-left w-2/3">
+                <p class="text-left">
+                  <strong>Họ và tên:</strong>
+                  <span id="display-name">Quy Khach</span>
+                </p>
+                <hr class="w-full border-gray-600 my-2" />
+                <p class="text-left">
+                  <strong>Số điện thoại:</strong>
+                  <span id="display-phone"></span>
+                </p>
+                <hr class="w-full border-gray-600 my-2" />
+                <p class="text-left">
+                  <strong>Giới tính:</strong> <span id="display-gender"></span>
+                </p>
+                <hr class="w-full border-gray-600 my-2" />
+                <p class="text-left">
+                  <strong>Ngày sinh:</strong>
+                  <span id="display-dob">01 Tháng 01, 2000</span>
+                </p>
+              </div>
+              <div id="edit-form" class="hidden text-left w-2/3">
+                <p>
+                  <strong>Họ và tên:</strong>
+                  <input
+                    type="text"
+                    id="name"
+                    value="Quy Khach"
+                    class="bg-gray-700 p-2 rounded w-full"
+                  />
+                </p>
+                <hr class="w-full border-gray-600 my-2" />
+                <p>
+                  <strong>Số điện thoại:</strong>
+                  <input
+                    type="text"
+                    id="phone"
+                    value=""
+                    class="bg-gray-700 p-2 rounded w-full"
+                  />
+                </p>
+                <hr class="w-full border-gray-600 my-2" />
+                <p>
+                  <strong>Giới tính:</strong>
+                  <select id="gender" class="bg-gray-700 p-2 rounded w-full">
+                    <option value="Nam" selected>Nam</option>
+                    <option value="Nữ">Nữ</option>
+                    <option value="Khác">Khác</option>
+                  </select>
+                </p>
+                <hr class="w-full border-gray-600 my-2" />
+                <p>
+                  <strong>Ngày sinh:</strong>
+                  <select id="day" class="bg-gray-700 p-2 rounded"></select>
+                  <select id="month" class="bg-gray-700 p-2 rounded"></select>
+                  <select id="year" class="bg-gray-700 p-2 rounded"></select>
+                </p>
+              </div>
+            </div>
+            <button id="edit-button" class="bg-blue-600 px-4 py-2 rounded">
+              Chỉnh sửa thông tin
+            </button>
+            <button
+              id="save-button"
+              class="bg-red-600 px-4 py-2 rounded hidden"
+            >
+              Lưu thông tin
+            </button>
+          </main>
+        </div>
+      </div>
+    </div>
+    <div class="chatbox">
+      <div class="chat-header">
+        <span>💬 Hỗ trợ khách hàng</span>
+        <button class="chat-close">✖</button>
+      </div>
+      <div class="chat-body">
+        <div class="chat-messages"></div>
+        <div class="chat-input-container">
+          <input
+            type="text"
+            class="chat-input"
+            placeholder="Nhập tin nhắn..."
+          />
+          <button class="chat-send">Gửi</button>
+        </div>
+      </div>
+    </div>
+    <button class="chat-toggle">💬</button>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-column">
+          <h3>Chăm sóc khách hàng</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Thông tin về website</h3>
+          <p>Website bán các sản phẩm kỹ thuật số</p>
+          <p>📍 Địa chỉ: Trường Đại Học Tài chính - Ngân hàng Hà Nội</p>
+          <p>31 Dịch Vọng Hậu - Cầu Giấy - Hà Nội</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Phương Thức Thanh Toán</h3>
+          <p>💳 Thanh toán qua thẻ: Visa, MasterCard</p>
+          <p>🏦 Chuyển khoản ngân hàng</p>
+          <p>📲 Ví điện tử: Momo, ZaloPay</p>
+          <p>💰 Thanh toán khi nhận hàng (COD)</p>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <p>© 2025 KTSShop.com.vn. Tất cả quyền được bảo lưu.</p>
+        <p>Website được phát triển bởi nhóm 6 môn TMVNHDT. Liên hệ:</p>
+        <p>
+          <strong>Trưởng nhóm:</strong> Nguyễn Mạnh Anh - MSV: 2254800104 -
+          Email:
+          <a href="mailto:nguyenmanhanh04@gmail.com"
+            >nguyenmanhanh04@gmail.com</a
+          >
+          - SĐT: <a href="tel:0395806898">0395806898</a> - Điện Thoại
+        </p>
+      </div>
+    </footer>
+
+    <script src="../Code JS/TTCN.js"></script>
+  </body>
+</html>

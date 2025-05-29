@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oppo Reno 13F</title>
+    <link rel="stylesheet" href="../Code CSS/astyle2.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img
+          src="../Ảnh/z6322794975136_70f7ef48558d457e4384cf3304b8fc8d.jpg"
+          width="60"
+          height="60"
+          alt=""
+        />
+        <strong>KTSShop.com.vn</strong>
+      </div>
+      <div class="dropdown-menu">
+        <button>☰ Danh mục</button>
+        <div class="menu-content">
+          <a href="ĐienThoai.html">Điện thoại</a>
+          <a href="../../Tra/HThtml/laptop.html">Laptop</a>
+          <a href="../../Vinh/Html/DienLanhShop.html">Điện máy</a>
+          <a href="../../Khánh/Html/phukien.html">Phụ kiện</a>
+          <a href="../../Hiếu/HTML/dogiadung.html">Đồ gia dụng</a>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm"
+        />
+        <button id="searchButton">Tìm kiếm</button>
+      </div>
+
+      <div class="icons">
+        <a href="dangnhap.html" style="color: white; text-decoration: none">
+          <div>Đăng nhập</div>
+        </a>
+        <a href="ShoppingCart.html" style="color: white; text-decoration: none">
+          <div class="cart-icon">
+            🛒 Giỏ hàng
+            <div class="cart-count">0</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <a>Mọi thiết bị công nghệ bạn cần – Tất cả chỉ bằng một cú nhấp chuột!</a>
+      <a>Bảo hành chính hãng, sale nhiều, giảm sâu</a>
+      <a
+        >Mua iPhone 16 Pro Max chính hãng, giá tốt, nhiều ưu đãi tại
+        KTSShop.com.vn</a
+      >
+    </div>
+    <div class="breadcrumb-title-container">
+      <div class="breadcrumb">
+        <a href="Demo.html" style="color: blue; text-decoration: none"
+          >Trang chủ</a
+        >
+        /
+        <a href="ĐienThoai.html" style="color: blue; text-decoration: none"
+          >Điện thoại</a
+        >
+        /
+        <a href="Xiaomi14TPro.html" style="color: black; text-decoration: none"
+          >Xiaomi 14T Pro 5G 12GB</a
+        >
+      </div>
+      <div
+        class="product"
+        data-id="4"
+        data-name="Xiaomi 14T Pro 5G"
+        data-price="14990000"
+        data-image="../Ảnh/xiaomi_14t_pro_titan_gray_1_45b1866e10 (1).png"
+      >
+        <div class="product-image">
+          <div class="carousel">
+            <div class="carousel-images">
+              <img
+                src="../Ảnh/xiaomi_14t_pro_titan_gray_1_45b1866e10 (1).png"
+                width="1000"
+                height="253"
+                alt=""
+              />
+              <img
+                src="../Ảnh/xiaomi_14t_pro_black_1_6d563df835.png"
+                width="1000"
+                height="253"
+                alt=""
+              />
+              <img
+                src="../Ảnh/xiaomi_14t_pro_blue_1_5f61c0cb50.png"
+                width="1000"
+                height="253"
+                alt=""
+              />
+            </div>
+            <div class="carousel-buttons">
+              <button id="prev">&#10094;</button>
+              <button id="next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-title">Xiaomi 14T Pro 12GB 512GB</div>
+
+          <div class="product-options">
+            <label for="storage">Dung lượng:</label>
+            <select id="storage" onchange="updatePrice()">
+              <option value="512GB">512GB</option>
+              <option value="1TB">1TB</option>
+            </select>
+          </div>
+          <div class="product-options">
+            <label for="color">Màu sắc:</label>
+            <select id="color" onchange="updatePrice()">
+              <option value="Xám">Xám</option>
+              <option value="Đen">Đen</option>
+              <option value="Xanh Dương">Xanh Dương</option>
+            </select>
+          </div>
+          <div class="product-price">
+            <span class="old-price" id="old-price">17.990.000 ₫</span>
+            <span class="new-price" id="price">14.990.000₫</span>
+          </div>
+          <div class="buttons">
+            <a href="ThanhToan.html">
+              <button onclick="buyNow()">Mua ngay</button></a
+            >
+            <button onclick="addToCart()">Thêm vào giỏ hàng</button>
+          </div>
+          <div
+            class="fb-like"
+            data-href="https://developers.facebook.com/docs/plugins/"
+            data-width="200"
+            data-layout=""
+            data-action=""
+            data-size=""
+            data-share="true"
+          ></div>
+        </div>
+        <div class="product-details">
+          <div class="product-gifts">
+            <h3>Quà tặng và ưu đãi khi mua hàng</h3>
+            <ul>
+              <li>✔️ Cường lực miễn phí - Tặng kèm khi mua hàng</li>
+              <li>✔️ Ốp lưng chính hãng</li>
+              <li>✔️ Hàng chính hãng - Bảo hành 12 tháng</li>
+              <li>✔️ Giao hàng toàn quốc</li>
+              <li>
+                ✔️ Trả góp 0% lãi suất, MIỄN PHÍ chuyển đổi kì hạn 3 - 6 tháng
+                qua thẻ tín dụng
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="custom-divider">&nbsp;&nbsp;</div>
+      <div class="product-container">
+        <div class="product-specs">
+          <h3>Thông số nổi bật</h3>
+          <div class="spec-item">
+            <span>Chip:</span>
+            <span>Dimensity 9300+</span>
+          </div>
+          <div class="spec-item">
+            <span>Kích thước màn hình:</span>
+            <span>6.67"</span>
+          </div>
+          <div class="spec-item">
+            <span>Thời lượng pin:</span>
+            <span>5000 mAh</span>
+          </div>
+          <div class="spec-item">
+            <span>Kết nối NFC:</span>
+            <span>Có</span>
+          </div>
+          <div class="spec-item">
+            <span>Công nghệ màn hình:</span>
+            <span>AMOLED</span>
+          </div>
+          <div class="spec-item">
+            <span>Tần số quét:</span>
+            <span>144Hz</span>
+          </div>
+          <div class="spec-item">
+            <span>Độ phân giải:</span>
+            <span>2712 x 1220 Pixels</span>
+          </div>
+          <div class="spec-item">
+            <span>Chất liệu:</span>
+            <span>Hợp kim nhôm</span>
+          </div>
+          <div class="spec-item">
+            <span>Trọng lượng:</span>
+            <span>209g</span>
+          </div>
+          <div class="spec-item">
+            <span>Camera trước:</span>
+            <span>32MP</span>
+          </div>
+          <div class="spec-item">
+            <span>Camera sau:</span>
+            <span>50MP+ 50MP + 12MP</span>
+          </div>
+        </div>
+
+        <div class="product-video">
+          <h3>Video liên quan</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/LRicMXLVOSg"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+      <div class="product-description">
+        <h2>Mô tả sản phẩm</h2>
+        <p>
+          Xiaomi 14T Pro không chỉ nổi bật với sự hợp tác giữa thương hiệu và
+          Leica tạo nên một chiếc smartphone hàng đầu về nhiếp ảnh mà còn có
+          hiệu suất mạnh mẽ bậc nhất trong phân khúc. Điện thoại thể hiện sự
+          toàn diện khi cung cấp trải nghiệm nghe nhìn ấn tượng và khả năng vận
+          hành bền bỉ.
+        </p>
+        <div id="them-thong-tin" class="an">
+          <img
+            src="../Ảnh/xiaomi_14t_pro_1_2262e6d427.jpg"
+            width="600"
+            height="390"
+            alt=""
+          />
+          <h3>Ống kính camera Leica thế hệ mới, 5 tiêu cự</h3>
+          <p>
+            Thấu kính quang học Leica Summilux xuất hiện trên Xiaomi 14T Pro với
+            khẩu độ lớn và hiệu suất quang học hàng đầu, giúp bạn ghi lại những
+            chi tiết tuyệt đẹp dù chụp ở môi trường ánh sáng yếu. Bên cạnh đó,
+            thấu kính này còn xử lý hình ảnh ấn tượng khi có khả năng tái tạo
+            màu sắc và độ tương phản cao.Dù chỉ có ba ống kính, nhưng Xiaomi 14T
+            Pro lại kết hợp những tiêu cự được sử dụng phổ biến nhất với chuyên
+            môn của Leica về tinh chỉnh ảnh. Từ đó, cung cấp đến 5 tiêu cự và
+            bao quát từ 15mm đến 120mm.
+          </p>
+          <img
+            src="../Ảnh/xiaomi_14t_pro_2_1b41213138.jpg"
+            width="600"
+            height="390"
+            alt=""
+          />
+          <h3>Dải động siêu cao và giảm thiểu nhiễu hạt hiệu quả</h3>
+          <p>
+            Với việc sử dụng cảm biến Light Fusion 900 - cảm biến hình ảnh được
+            tùy chỉnh dành riêng cho Xiaomi với kích thước 1/1,31", Xiaomi 14T
+            Pro sẽ thay bạn ghi lại những chi tiết rõ nét đến không ngờ dù chụp
+            ở điều kiện sáng hay những buổi đêm mờ ảo. Cảm biến này có dải động
+            cao 13,5EV ở mức điện ảnh và độ sâu màu 14 bit, từ đó đảm bảo khả
+            năng tái tạo hình ảnh xuất sắc.
+          </p>
+          <img
+            src="../Ảnh/xiaomi_14t_pro_3_23d5814068.jpg"
+            width="600"
+            height="390"
+            alt=""
+          />
+          <p>
+            Xiaomi AISP cũng được tích hợp trên Xiaomi 14T Pro, kết hợp sức mạnh
+            điện toán của CPU, GPU, NPU và ISP thông qua Xiaomi HyperOS. Sự kết
+            hợp giữa phần cứng và phần mềm sẽ đem lại khả năng chụp ảnh bằng
+            công nghệ điện toán thông minh và hiệu quả xử lý hình ảnh tổng thể
+            được nâng lên tầm cao mới.
+          </p>
+          <h3>Phong cách chụp ảnh Leica và ảnh chân dung chất lượng</h3>
+          <p>
+            Người dùng có thể ghi lại những bức ảnh phong cảnh hay nghệ thuật
+            thông qua hai phong cách chụp ảnh chuẩn Leica cùng 6 bộ lọc Leica
+            được trang bị trên Xiaomi 14T Pro. Dù là phong cách hoài cổ hay sống
+            động, điện thoại Xiaomi đều đáp ứng và cho ra kết quả ngoài mong đợi
+            của bạn.
+          </p>
+        </div>
+        <button id="xemThemBtn" class="button1">Xem Thêm ▼</button>
+      </div>
+    </div>
+
+    <div class="rating-container">
+      <h2>Khách hàng nói về sản phẩm</h2>
+      <div class="average-rating" id="avg-rating">4.5</div>
+      <p id="total-reviews">12 lượt đánh giá</p>
+      <div class="stars" id="star-display">☆☆☆☆☆</div>
+
+      <div>
+        <div class="rating-bar">
+          <span>5⭐</span>
+          <div class="bar"><div class="bar-fill" id="bar-5"></div></div>
+          <span id="count-5">10</span>
+        </div>
+        <div class="rating-bar">
+          <span>4⭐</span>
+          <div class="bar"><div class="bar-fill" id="bar-4"></div></div>
+          <span id="count-4">0</span>
+        </div>
+        <div class="rating-bar">
+          <span>3⭐</span>
+          <div class="bar"><div class="bar-fill" id="bar-3"></div></div>
+          <span id="count-3">1</span>
+        </div>
+        <div class="rating-bar">
+          <span>2⭐</span>
+          <div class="bar"><div class="bar-fill" id="bar-2"></div></div>
+          <span id="count-2">0</span>
+        </div>
+        <div class="rating-bar">
+          <span>1⭐</span>
+          <div class="bar"><div class="bar-fill" id="bar-1"></div></div>
+          <span id="count-1">1</span>
+        </div>
+      </div>
+
+      <div class="rate-buttons">
+        <button>Đánh giá sản phẩm</button>
+        <button onclick="rate(5)">5☆</button>
+        <button onclick="rate(4)">4☆</button>
+        <button onclick="rate(3)">3☆</button>
+        <button onclick="rate(2)">2☆</button>
+        <button onclick="rate(1)">1☆</button>
+      </div>
+      <b>Bình luận</b>
+      <div class="comment-box">
+        <input
+          type="text"
+          placeholder="Nhập nội dung bình luận..."
+          maxlength="3000"
+        />
+        <button class="btn-send">Gửi bình luận</button>
+      </div>
+    </div>
+    <div class="chatbox">
+      <div class="chat-header">
+        <span>💬 Hỗ trợ khách hàng</span>
+        <button class="chat-close">✖</button>
+      </div>
+      <div class="chat-body">
+        <div class="chat-messages"></div>
+        <div class="chat-input-container">
+          <input
+            type="text"
+            class="chat-input"
+            placeholder="Nhập tin nhắn..."
+          />
+          <button class="chat-send">Gửi</button>
+        </div>
+      </div>
+    </div>
+    <button class="chat-toggle">💬</button>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-column">
+          <h3>Chăm sóc khách hàng</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Thông tin về website</h3>
+          <p>Website bán các sản phẩm kỹ thuật số</p>
+          <p>📍 Địa chỉ: Trường Đại Học Tài chính - Ngân hàng Hà Nội</p>
+          <p>31 Dịch Vọng Hậu - Cầu Giấy - Hà Nội</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Phương Thức Thanh Toán</h3>
+          <p>💳 Thanh toán qua thẻ: Visa, MasterCard</p>
+          <p>🏦 Chuyển khoản ngân hàng</p>
+          <p>📲 Ví điện tử: Momo, ZaloPay</p>
+          <p>💰 Thanh toán khi nhận hàng (COD)</p>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <p>© 2025 KTSShop.com.vn. Tất cả quyền được bảo lưu.</p>
+        <p>Website được phát triển bởi nhóm 6 môn TMVNHDT. Liên hệ:</p>
+        <p>
+          <strong>Trưởng nhóm:</strong> Nguyễn Mạnh Anh - MSV: 2254800104 -
+          Email:
+          <a href="mailto:nguyenmanhanh04@gmail.com"
+            >nguyenmanhanh04@gmail.com</a
+          >
+          - SĐT: <a href="tel:0395806898">0395806898</a> - Điện Thoại
+        </p>
+      </div>
+    </footer>
+    <script src="../Code JS/ajs5.js"></script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v22.0"
+    ></script>
+  </body>
+</html>

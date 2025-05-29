@@ -1,0 +1,87 @@
+body {
+  background: linear-gradient(135deg, #35b1ea, #2b0cd8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.register-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.register-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+.input-group input {
+  width: 94%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.input-group input:focus {
+  border-color: #ff8888;
+  box-shadow: 0 0 8px rgba(255, 136, 136, 0.6);
+  outline: none;
+}
+.register-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #35b1ea, #2b0cd8);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.register-button:hover {
+  background: linear-gradient(135deg, #0616ed, #532dec);
+  transform: scale(1.05);
+}
+.login-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.login-link {
+  color: #ff4b4b;
+  text-decoration: none;
+  font-weight: bold;
+}
+.login-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Điện Thoại</title>
+    <link rel="stylesheet" href="../Code CSS/astyle1.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img
+          src="../Ảnh/z6322794975136_70f7ef48558d457e4384cf3304b8fc8d.jpg"
+          width="60"
+          height="60"
+          alt=""
+        />
+        <strong>KTSShop.com.vn</strong>
+      </div>
+      <div class="dropdown-menu">
+        <button>☰ Danh mục</button>
+        <div class="menu-content">
+          <a href="ĐienThoai.html">Điện thoại</a>
+          <a href="../../Tra/HThtml/laptop.html">Laptop</a>
+          <a href="../../Vinh/Html/DienLanhShop.html">Điện máy</a>
+          <a href="../../Khánh/Html/phukien.html">Phụ kiện</a>
+          <a href="../../Hiếu/HTML/dogiadung.html">Đồ gia dụng</a>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm"
+        />
+        <button id="searchButton">Tìm kiếm</button>
+      </div>
+      <div class="icons">
+        <a href="dangnhap.html" style="color: white; text-decoration: none">
+          <div>Đăng nhập</div>
+        </a>
+        <a href="ShoppingCart.html" style="color: white; text-decoration: none">
+          <div class="cart-icon">
+            🛒 Giỏ hàng
+            <div class="cart-count">0</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <a>Mọi thiết bị công nghệ bạn cần – Tất cả chỉ bằng một cú nhấp chuột!</a>
+      <a>Bảo hành chính hãng, sale nhiều, giảm sâu</a>
+      <a
+        >Mua iPhone 16 Pro Max chính hãng, giá tốt, nhiều ưu đãi tại
+        KTSShop.com.vn</a
+      >
+    </div>
+
+    <div class="breadcrumb-title-container">
+      <div class="breadcrumb">
+        <a href="Demo.html" style="color: blue; text-decoration: none"
+          >Trang chủ</a
+        >
+        /
+        <a href="ĐienThoai.html">Điện thoại</a>
+      </div>
+      <div class="page-title">Điện thoại</div>
+
+      <div class="category-line"></div>
+      <div class="carousel">
+        <div class="carousel-images">
+          <img
+            src="../Ảnh/Screenshot 2025-01-21 160101.png"
+            width="1000"
+            height="254"
+            alt=""
+          />
+          <img
+            src="../Ảnh/Screenshot 2025-01-21 160157.png"
+            width="1000"
+            height="252"
+            alt=""
+          />
+          <img
+            src="../Ảnh/Group_2085666504_fab80fdc07.png"
+            width="1000"
+            height="253"
+            alt=""
+          />
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active" onclick="setSlide(0)"></span>
+          <span class="dot" onclick="setSlide(1)"></span>
+          <span class="dot" onclick="setSlide(2)"></span>
+        </div>
+        <div class="carousel-buttons">
+          <button id="prev">&#10094;</button>
+          <button id="next">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-sort-container">
+      <div class="filter-container">
+        <label for="brandFilter">Hãng sản xuất:</label>
+        <select id="brandFilter" onchange="filterProducts()">
+          <option value="all">Tất cả hãng</option>
+          <option value="iphone">iPhone</option>
+          <option value="Samsung">Samsung</option>
+          <option value="Oppo">Oppo</option>
+          <option value="Realme">Realme</option>
+          <option value="Xiaomi">Xiaomi</option>
+        </select>
+      </div>
+
+      <div class="filter-container">
+        <label for="priceFilter">Lọc theo giá:</label>
+        <select id="priceFilter" onchange="filterProducts()">
+          <option value="all">Tất cả giá</option>
+          <option value="duoi10">Dưới 10 triệu</option>
+          <option value="10-20">Từ 10 đến 20 triệu</option>
+          <option value="20-30">Từ 20 đến 30 triệu</option>
+          <option value="tren30">Trên 30 triệu</option>
+        </select>
+      </div>
+
+      <div class="sort-container">
+        <label for="sortOrder">Sắp xếp:</label>
+        <select id="sortOrder" onchange="sortProducts()">
+          <option value="featured">Mới nhất</option>
+          <option value="asc">Giá tăng dần</option>
+          <option value="desc">Giá giảm dần</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="product-list">
+      <div
+        class="product"
+        data-price="32890000"
+        data-brand="iphone"
+        onclick="location.href='iphone16ProMax.html'"
+      >
+        <img
+          src="../Ảnh/iphone_16_pro_max_bda3030b4b.png"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">32.890.000 ₫</div>
+        <div class="old-price">34.990.000 ₫</div>
+        <div class="discount">Giảm giá: -6%</div>
+        <div class="description">iPhone 16 Pro Max 8GB 256GB</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="9990000"
+        data-brand="Samsung"
+        onclick="location.href='SamsungGalaxyZPlip4.html'"
+      >
+        <img
+          src="../Ảnh/2022_8_10_637957658354316100_samsung-galaxy-z-flip4-tim-1.jpg"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">9.990.000 ₫</div>
+        <div class="old-price">23.990.000 ₫</div>
+        <div class="discount">Giảm giá: -58%</div>
+        <div class="description">Samsung Galaxy Z Flip4 5G 128GB</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="10990000"
+        data-brand="Oppo"
+        onclick="location.href='OppoReno13F.html'"
+      >
+        <img
+          src="../Ảnh/oppo_reno13_f_5g_tim_5_858ba5c2ad (1).png"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">10.990.000 ₫</div>
+        <div class="old-price">12.990.000 ₫</div>
+        <div class="discount">Giảm giá: -15%</div>
+        <div class="description">Oppo Reno 13F 5G 12GB 256GB</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="14990000"
+        data-brand="Xiaomi"
+        onclick="location.href='Xiaomi14TPro.html'"
+      >
+        <img
+          src="../Ảnh/xiaomi_14t_pro_titan_gray_1_45b1866e10 (1).png"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">14.990.000 ₫</div>
+        <div class="old-price">17.990.000 ₫</div>
+        <div class="discount">Giảm giá: -17%</div>
+        <div class="description">Xiaomi 14T Pro 12GB 512GB</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+      <div
+        class="product"
+        data-price="7990000"
+        data-brand="Realme"
+        onclick="location.href='Realme13+.html'"
+      >
+        <img
+          src="../Ảnh/realme_13_plus_5g_tim_5_4ed930bfe7 (1).png"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="price">7.990.000 ₫</div>
+        <div class="old-price">9.490.000 ₫</div>
+        <div class="discount">Giảm giá: -16%</div>
+        <div class="description">Realme 13+ 5G 8GB 256GB</div>
+        <a href="ThanhToan.html">
+              <button class="buy-now">Mua ngay</button></a
+            >
+      </div>
+    </div>
+
+    <div class="pagination">
+      <button id="prevPage">&laquo;</button>
+      <span id="pageInfo">1</span>
+      <button id="nextPage">&raquo;</button>
+    </div>
+
+    <div class="history-banner">
+      <img
+        src="../Ảnh/banner_dien_thoai_cu_a497c86b1a.png"
+        alt="Lịch sử phát triển điện thoại"
+      />
+    </div>
+    <div class="history-container">
+      <h2>Lịch sử phát triển của điện thoại thông minh</h2>
+
+      <h3>Sự ra đời của điện thoại di động</h3>
+      <p>
+        Vào ngày 10 tháng 3 năm 1876, nhà khoa học người Scotland - Alexander
+        Graham Bell đã được cấp bằng sáng chế cho việc phát minh ra điện thoại.
+        Sự kiện này đã mở ra cách mạng viễn thông và gắn kết con người từ những
+        nơi xa xôi thông qua giọng nói.Trong giai đoạn đầu của lịch sử điện
+        thoại, các máy điện thoại còn rất lớn và nặng, chỉ có thể được sử dụng
+        tại các địa điểm cố định và có giới hạn về phạm vi. Cuộc đua đầu tiên
+        trong việc phát triển điện thoại di động đã bắt đầu vào những năm 1940
+        và 1950 khi các nhà nghiên cứu và kỹ sư trên khắp thế giới bắt đầu tìm
+        cách giảm kích thước và trọng lượng của điện thoại để có thể di động
+        hơn.
+      </p>
+      <div id="them-thong-tin" class="an">
+        <img src="../Ảnh/history.png" width="480" height="320" alt="" />
+        <p>
+          Các điểm đáng chú ý trong giai đoạn này bao gồm việc ra mắt dịch vụ di
+          động đầu tiên vào năm 1946 tại Hoa Kỳ, và việc giới thiệu các máy di
+          động đầu tiên vào cuối những năm 1970 và đầu những năm 1980.
+        </p>
+        <h3>Từ điện thoại di động đến điện thoại thông minh</h3>
+        <p>
+          Thập kỷ 1990 chứng kiến sự bùng nổ thực sự của công nghệ di động với
+          việc ra mắt các điện thoại di động thông minh (smartphone). Các thiết
+          bị này không chỉ có khả năng gọi điện thoại mà còn tích hợp nhiều tính
+          năng thông minh khác như: gửi tin nhắn, duyệt web, chơi game và chạy
+          các ứng dụng đa dạng,… Motorola StarTAC, ra mắt năm 1996, được coi là
+          một trong những smartphone đầu tiên trên thị trường. Từ đó, sự phát
+          triển của điện thoại thông minh đã vượt bậc với sự xuất hiện của các
+          hệ điều hành như Symbian, BlackBerry OS, iOS và Android.
+        </p>
+        <img
+          src="../Ảnh/mau-dien-thoai-dau-tien-1.jpg"
+          width="480"
+          height="320"
+          alt=""
+        />
+        <p>
+          Các điểm đáng chú ý trong giai đoạn này bao gồm việc ra mắt dịch vụ di
+          động đầu tiên vào năm 1946 tại Hoa Kỳ, và việc giới thiệu các máy di
+          động đầu tiên vào cuối những năm 1970 và đầu những năm 1980.
+        </p>
+        <h3>Các cách mà smartphone đã thay đổi cuộc sống và công nghệ</h3>
+        <p>
+          Điện thoại thông minh đã có sự tác động mạnh mẽ đến cuộc sống của con
+          người. Chúng đã trở thành một phần không thể thiếu trong cuộc sống
+          hàng ngày, giúp chúng ta giữ liên lạc với gia đình, bạn bè và đồng
+          nghiệp. Ngoài ra, smartphone đã mở ra cơ hội mới cho việc làm việc và
+          giải trí, thông qua ứng dụng và các tính năng tiện ích như: email,
+          video call, mạng xã hội,…
+        </p>
+        <img
+          src="../Ảnh/mau-dien-thoai-dau-tien(1).jpg"
+          width="480"
+          height="320"
+          alt=""
+        />
+        <p>
+          Điện thoại thông minh cũng đã thay đổi cách mà chúng ta tiếp cận thông
+          tin và truyền tải tin tức. Nhờ vào tích hợp Internet và ứng dụng tin
+          tức, bạn có thể nắm bắt thông tin mới nhất mọi lúc, mọi nơi. Ngoài ra,
+          công nghệ di động đã thúc đẩy sự phát triển của nền kinh tế số và
+          thương mại điện tử, mở ra cơ hội kinh doanh và tiếp thị trực tuyến.
+        </p>
+      </div>
+      <button id="xemThemBtn" class="button1">Xem Thêm ▼</button>
+    </div>
+    <div class="chatbox">
+      <div class="chat-header">
+        <span>💬 Hỗ trợ khách hàng</span>
+        <button class="chat-close">✖</button>
+      </div>
+      <div class="chat-body">
+        <div class="chat-messages"></div>
+        <div class="chat-input-container">
+          <input
+            type="text"
+            class="chat-input"
+            placeholder="Nhập tin nhắn..."
+          />
+          <button class="chat-send">Gửi</button>
+        </div>
+      </div>
+    </div>
+    <button class="chat-toggle">💬</button>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-column">
+          <h3>Chăm sóc khách hàng</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Thông tin về website</h3>
+          <p>Website bán các sản phẩm kỹ thuật số</p>
+          <p>📍 Địa chỉ: Trường Đại Học Tài chính - Ngân hàng Hà Nội</p>
+          <p>31 Dịch Vọng Hậu - Cầu Giấy - Hà Nội</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Phương Thức Thanh Toán</h3>
+          <p>💳 Thanh toán qua thẻ: Visa, MasterCard</p>
+          <p>🏦 Chuyển khoản ngân hàng</p>
+          <p>📲 Ví điện tử: Momo, ZaloPay</p>
+          <p>💰 Thanh toán khi nhận hàng (COD)</p>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <p>© 2025 KTSShop.com.vn. Tất cả quyền được bảo lưu.</p>
+        <p>Website được phát triển bởi nhóm 6 môn TMVNHDT. Liên hệ:</p>
+        <p>
+          <strong>Trưởng nhóm:</strong> Nguyễn Mạnh Anh - MSV: 2254800104 -
+          Email:
+          <a href="mailto:nguyenmanhanh04@gmail.com"
+            >nguyenmanhanh04@gmail.com</a
+          >
+          - SĐT: <a href="tel:0395806898">0395806898</a> - Điện Thoại
+        </p>
+      </div>
+    </footer>
+    <script src="../Code JS/ajs1.js"></script>
+  </body>
+</html>

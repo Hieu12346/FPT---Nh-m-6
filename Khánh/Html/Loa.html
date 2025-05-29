@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/sanpham.css" />
+    <title>Loa</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="../Ảnh/ho.jpg" width="60" height="60" alt="" />
+        <strong>KTSShop.com.vn</strong>
+      </div>
+      <div class="dropdown-menu">
+        <button>Danh mục</button>
+        <div class="menu-content">
+          <a href="../../Mạnh Anh/Code HTML/ĐienThoai.html">Điện thoại</a>
+            <a href="../../Tra/HThtml/laptop.html">Laptop</a>
+            <a href="../../Vinh/Html/DienLanhShop.html">Điện máy</a>
+            <a href="phukien.html">Phụ kiện</a>
+            <a href="../../Hiếu/HTML/dogiadung.html">Đồ gia dụng</a>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input
+        type="text" id="searchInput"
+        placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm"
+      />
+      <button id="searchButton">Tìm kiếm</button>
+      </div>
+      <div class="icons">
+        <a href="../../Mạnh Anh/Code HTML/dangnhap.html" style="color: white; text-decoration: none;">
+          <div>Đăng nhập</div>
+        </a>
+        <a href="../../Mạnh Anh/Code HTML/ShoppingCart.html" style="color: white; text-decoration: none">
+          <div class="cart-icon">
+            🛒 Giỏ hàng
+            <div class="cart-count">0</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <a>Mọi thiết bị công nghệ bạn cần – Tất cả chỉ bằng một cú nhấp chuột!</a>
+      <a>Bảo hành chính hãng, sale nhiều, giảm sâu</a>
+      <a>Mua iPhone 16 Pro Max chính hãng, giá tốt, nhiều ưu đãi tại KTSShop.com.vn</a>
+    </div>
+    <div class="container-1">
+      <div class="breadcrumb">
+        <a href="../../Mạnh Anh/Code HTML/Demo.html">Trang chủ</a>/ <a href="phukien.html">Phụ kiện</a>/
+        <a href="Loa.html">Loa</a>
+      </div>
+      <h1>Chi tiết sản phẩm</h1>
+      <div class="product">
+        <img
+          src="../Ảnh/2024_5_8_638507663083492456_QD35-black.jpg"
+          width="384"
+          height="auto"
+          alt=""
+        />
+        <div class="details">
+          <h2>Loa Bluetooth Edifier QD35</h2>
+          <p class="price">
+            2.549.000 ₫ <span class="old-price">2.690.000 ₫</span>
+          </p>
+          <div
+            class="promotion-box"
+            style="
+              border: 1px solid red;
+              padding: 5px;
+              margin-bottom: 5px;
+              width: fit-content;
+              font-size: 14px;
+            "
+          >
+            <strong>Khuyến mãi nổi bật</strong>
+            <p style="margin: 5px 0">Giảm ngay 141,000đ</p>
+          </div>
+          <button class="buy-button">Mua ngay</button>
+          <button
+  class="add-to-cart"
+  data-id="Loa"
+  data-name="Loa Bluetooth Edifier QD35"
+  data-price="2549000"
+  data-old-price="2690000"
+  data-color="Đen"
+  data-storage="2.64kg"
+  data-image="../../Mạnh Anh/Ảnh/2024_5_8_638507663083492456_QD35-black.jpg"
+  onclick="addToCart(this)"
+>
+  Thêm vào giỏ hàng
+</button>
+          <br />
+          <br />
+          <div
+            class="fb-like"
+            data-href="https://developers.facebook.com/docs/plugins/"
+            data-width="80"
+            data-layout=""
+            data-action=""
+            data-size=""
+            data-share="true"
+          ></div>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <div class="product-video">
+          <h2>Video liên quan</h2>
+          <iframe
+            src="https://www.youtube.com/embed/pRKojx6xWic"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="specs-container">
+          <h2>Thông số kỹ thuật</h2>
+          <table>
+            <tr>
+              <th>Hãng</th>
+              <td>Edifier</td>
+            </tr>
+            <tr>
+              <th>Công suất</th>
+              <td>40W (20W x 2)</td>
+            </tr>
+            <tr>
+              <th>Chuẩn Bluetooth</th>
+              <td>Bluetooth 5.3</td>
+            </tr>
+            <tr>
+              <th>Hỗ trợ Codec</th>
+              <td>AAC, SBC</td>
+            </tr>
+            <tr>
+              <th>Dải tần</th>
+              <td>60Hz - 20kHz</td>
+            </tr>
+            <tr>
+              <th>Cổng kết nối</th>
+              <td>Aux, USB, Bluetooth</td>
+            </tr>
+            <tr>
+              <th>Kích thước</th>
+              <td>277 x 164 x 137 mm</td>
+            </tr>
+            <tr>
+              <th>Trọng lượng</th>
+              <td>2.64 kg</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="product-description">
+        <h2>Mô tả sản phẩm</h2>
+        <p>
+          Với rất nhiều tính năng nổi bật, loa Bluetooth Edifier QD35 không chỉ
+          đáp ứng nhu cầu nghe nhạc chất lượng cao mà còn mang lại trải nghiệm
+          giải trí đa dạng và phong phú, phù hợp với mọi không gian sống và làm
+          việc. Vì vậy, đây sẽ là một lựa chọn không thể bỏ qua cho những ai
+          đang tìm kiếm một chiếc loa chất lượng.
+        </p>
+        <div id="them-thong-tin" class="an">
+        <h3>Hiệu suất âm thanh đỉnh cao</h3>
+        <p>
+          Loa Bluetooth Edifier QD35 được trang bị hai driver chủ động gồm một
+          driver trung-bass 3 inch và một tweeter vòm lụa 1 inch, cùng với công
+          suất tổng 40W RMS. Điều này giúp loa có khả năng tái tạo âm thanh với
+          dải tần số từ 60Hz đến 40kHz, mang lại âm thanh mạnh mẽ và chi tiết
+          cho mọi nội dung. </br>Driver trung-bass của loa được thiết kế với màng loa
+          hợp kim nhôm và công nghệ thiết kế hành trình dài, giúp tái hiện âm
+          bass sâu và âm trung phong phú. Trong khi, driver tweeter vòm lụa 1
+          inch được tinh chỉnh để tái tạo âm cao rõ nét và trong trẻo. Ngoài ra,
+          loa còn được tích hợp bộ khuếch đại số DSP toàn dải và công nghệ phân
+          tách tín hiệu âm thanh chính xác giúp âm thanh trở nên sống động, chi
+          tiết và chân thực hơn, tạo nên một trải nghiệm âm thanh tuyệt vời cho
+          người nghe.
+        </p>
+        <img src="../Ảnh/loa.jpg" width="400" height="auto">
+        <h3>Chứng nhận âm thanh Hi-Res</h3>
+        <p>
+          Edifier QD35 được chứng nhận Hi-Res Audio và Hi-Res Audio Wireless, hỗ trợ các tín hiệu âm thanh có tần số lấy mẫu lên đến 96kHz. Chứng nhận này đảm bảo rằng loa có thể tái tạo âm thanh chất lượng cao với độ chi tiết và tinh tế. Điều này có nghĩa là mỗi nốt nhạc và âm thanh đều được truyền tải một cách rõ ràng và sống động.</br>
+          Với công nghệ 
+          LDAC, loa QD35 thậm chí còn có khả năng phát nhạc không dây chất lượng cao qua Bluetooth. Nhờ vậy, bạn sẽ có được trải nghiệm nghe nhạc đỉnh cao để đắm chìm trong mọi giai điệu yêu thích mà không phải lo lắng về sự suy giảm chất lượng qua kết nối không dây.
+        </p>
+        <img src="../Ảnh/loa1.jpg" width="400" height="auto">
+        <h3>Hiệu ứng ánh sáng độc đáo</h3>
+        <p>
+          Một trong những điểm nhấn nổi bật của loa Edifier QD35 chính là hiệu ứng ánh sáng RGB tuyệt đẹp mà bạn có thể tùy chỉnh theo ý thích của mình. Với nhiều chế độ ánh sáng có sẵn như ánh sáng tĩnh, chuyển màu, nhấp nháy và hiệu ứng thở, bạn có thể dễ dàng lựa chọn hoặc tự tạo hiệu ứng ánh sáng riêng thông qua ứng dụng Edifier Connect.
+          Edifier Connect không chỉ cho phép bạn thay đổi màu sắc, cường độ và kiểu dáng ánh sáng mà còn giúp bạn đồng bộ hóa ánh sáng với nhạc, tạo nên một không gian thú vị và đầy màu sắc. Điều này không chỉ làm tăng tính thẩm mỹ cho không gian của bạn mà còn nâng cao trải nghiệm giải trí, giúp bạn đắm chìm trong âm nhạc và ánh sáng hòa quyện.
+        </p>
+        <img src="../Ảnh/loa3.jpg" width="400" height="auto">
+        <h3>Tùy chỉnh EQ qua ứng dụng Edifier Connect</h3>
+        <p>
+          Ứng dụng Edifier Connect mang đến cho người dùng khả năng tùy chỉnh các cài đặt EQ (Equalizer) theo sở thích cá nhân, cho phép bạn điều chỉnh âm thanh theo phong cách nghe nhạc riêng của mình. Với các preset EQ có sẵn như Pop, Rock, Jazz và Classic, cùng với khả năng tự tạo và lưu trữ các cài đặt tùy chỉnh, bạn có thể dễ dàng chuyển đổi giữa các chế độ âm thanh khác nhau.
+          Ứng dụng cũng cho phép bạn điều chỉnh âm lượng, thay đổi đầu vào và quản lý các hiệu ứng ánh sáng một cách dễ dàng, mang lại sự tiện lợi và linh hoạt trong việc điều khiển loa QD35. Việc chia sẻ các cài đặt EQ tùy chỉnh với bạn bè cũng là một tính năng thú vị, giúp bạn có thể chia sẻ trải nghiệm nghe nhạc của mình với người khác.
+        </p>
+        </div>
+        <button id="xemThemBtn" class="button1">Xem Thêm</button>
+      </div>
+    </div>
+
+    <div class="chatbox">
+      <div class="chat-header">
+        <span>💬 Hỗ trợ khách hàng</span>
+        <button class="chat-close">✖</button>
+      </div>
+      <div class="chat-body">
+        <div class="chat-messages"></div>
+        <div class="chat-input-container">
+          <input
+            type="text"
+            class="chat-input"
+            placeholder="Nhập tin nhắn..."
+          />
+          <button class="chat-send">Gửi</button>
+        </div>
+      </div>
+    </div>
+    <button class="chat-toggle">💬</button>
+
+        <div class="container-2">
+          <h2>Đánh giá về sản phẩm</h2>
+          <h1 id="average-rating">5.0</h1>
+          <p id="total-reviews">17 lượt đánh giá</p>
+          <div class="stars">★★★★★</div>
+
+          <div class="rating-bar" onclick="addRating(5)">
+            5⭐
+            <div class="bar">
+              <div class="bar-fill" id="bar-5" style="width: 100%"></div>
+            </div>
+            <span id="count-5">17</span>
+          </div>
+          <div class="rating-bar" onclick="addRating(4)">
+            4⭐
+            <div class="bar">
+              <div class="bar-fill" id="bar-4" style="width: 0%"></div>
+            </div>
+            <span id="count-4">0</span>
+          </div>
+          <div class="rating-bar" onclick="addRating(3)">
+            3⭐
+            <div class="bar">
+              <div class="bar-fill" id="bar-3" style="width: 0%"></div>
+            </div>
+            <span id="count-3">0</span>
+          </div>
+          <div class="rating-bar" onclick="addRating(2)">
+            2⭐
+            <div class="bar">
+              <div class="bar-fill" id="bar-2" style="width: 0%"></div>
+            </div>
+            <span id="count-2">0</span>
+          </div>
+          <div class="rating-bar" onclick="addRating(1)">
+            1⭐
+            <div class="bar">
+              <div class="bar-fill" id="bar-1" style="width: 0%"></div>
+            </div>
+            <span id="count-1">0</span>
+          </div>
+
+          <div class="comment-section">
+            <textarea
+              class="comment-box"
+              id="comment"
+              placeholder="Viết đánh giá..."
+            ></textarea>
+            <button class="submit-button" onclick="submitComment()">Gửi</button>
+            <div id="comments" class="comment-list"></div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-column">
+          <h3>Chăm sóc khách hàng</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Thông tin về website</h3>
+          <p>Website bán các sản phẩm kỹ thuật số</p>
+          <p>📍 Địa chỉ: Trường Đại Học Tài chính - Ngân hàng Hà Nội</p>
+          <p>31 Dịch Vọng Hậu - Cầu Giấy - Hà Nội</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Phương Thức Thanh Toán</h3>
+          <p>💳 Thanh toán qua thẻ: Visa, MasterCard</p>
+          <p>🏦 Chuyển khoản ngân hàng</p>
+          <p>📲 Ví điện tử: Momo, ZaloPay</p>
+          <p>💰 Thanh toán khi nhận hàng (COD)</p>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <p>© 2025 KTSShop.com.vn. Tất cả quyền được bảo lưu.</p>
+        <p>Website được phát triển bởi nhóm 6 môn TMVNHDT. Liên hệ:</p>
+        <p>
+          <strong>Thành viên:</strong> Nguyễn Hữu Khánh - MSV: 2254800023023 -
+          Email:
+          <a href="mailto:huukhanh1311@gmail.comcom"
+            >huukhanh1311huukhanh1311@gmail.com</a
+          >
+          - SĐT: <a href="tel:0982392452">0982392452</a> - Điện Thoại
+        </p>
+      </div>
+    </footer>
+    <script src="../Script/Loa.js"></script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v22.0"
+    ></script>
+  </body>
+</html>

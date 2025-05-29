@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/phukien.css" />
+    <title>Phụ Kiện</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="../Ảnh/ho.jpg" width="60" height="60" alt="" />
+        <strong>KTSShop.com.vn</strong>
+      </div>
+      <div class="dropdown-menu">
+        <button>Danh mục</button>
+        <div class="menu-content">
+          <a href="../../Mạnh Anh/Code HTML/ĐienThoai.html">Điện thoại</a>
+          <a href="../../Tra/HThtml/laptop.html">Laptop</a>
+          <a href="../../Vinh/Html/DienLanhShop.html">Điện máy</a>
+          <a href="phukien.html">Phụ kiện</a>
+          <a href="../../Hiếu/HTML/dogiadung.html">Đồ gia dụng</a>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm"
+        />
+        <button id="searchButton">Tìm kiếm</button>
+      </div>
+      <div class="icons">
+        <a
+          href="../../Mạnh Anh/Code HTML/dangnhap.html"
+          style="color: white; text-decoration: none"
+        >
+          <div>Đăng nhập</div>
+        </a>
+        <a
+          href="../../Mạnh Anh/Code HTML/ShoppingCart.html"
+          style="color: white; text-decoration: none"
+        >
+          <div class="cart-icon">
+            🛒 Giỏ hàng
+            <div class="cart-count">0</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <a href="#"
+        >Mọi thiết bị công nghệ bạn cần – Tất cả chỉ bằng một cú nhấp chuột!</a
+      >
+      <a href="#">Bảo hành chính hãng, sale nhiều, giảm sâu</a>
+      <a href="#"
+        >Mua iPhone 16 Pro Max chính hãng, giá tốt, nhiều ưu đãi tại
+        KTSShop.com.vn</a
+      >
+    </div>
+
+    <div class="breadcrumb-title-container">
+      <div class="breadcrumb">
+        <a href="../../Mạnh Anh/Code HTML/Demo.html">Trang chủ</a>/
+        <a href="phukien.html">Phụ kiện</a>
+      </div>
+      <div class="page-title">Phụ kiện</div>
+
+      <div class="category-line"></div>
+      <div class="carousel">
+        <div class="carousel-images">
+          <img
+            src="../Ảnh/H1_1440x242_8c962089f1.png"
+            width="1920"
+            height="323"
+            alt=""
+          />
+          <img
+            src="../Ảnh/H1_1440x242_3_af0d398f55.png"
+            width="1920"
+            height="323"
+            alt=""
+          />
+        </div>
+        <div class="carousel-buttons">
+          <button id="prev">&#10094;</button>
+          <button id="next">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-sort-container">
+      <div class="filter-container">
+        <label for="priceFilter">Lọc theo giá:</label>
+        <select id="priceFilter" onchange="filterProducts()">
+          <option value="all">Tất cả giá</option>
+          <option value="duoi10">Dưới 10 triệu</option>
+          <option value="10-20">Từ 10 đến 20 triệu</option>
+          <option value="20-30">Từ 20 đến 30 triệu</option>
+          <option value="tren30">Trên 30 triệu</option>
+        </select>
+      </div>
+
+      <div class="sort-container">
+        <label for="sortOrder">Sắp xếp:</label>
+        <select id="sortOrder" onchange="sortProducts()">
+          <option value="featured">Mới nhất</option>
+          <option value="asc">Giá tăng dần</option>
+          <option value="desc">Giá giảm dần</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="product-list">
+      <div class="product" data-price="690000">
+        <a href="Tainghehonor.html">
+          <img
+            src="../Ảnh/tai_nghe_bluetooth_honor_choice_earbuds_x7e_trang_1_cbf19c597e.jpg"
+            width="auto"
+            height="200"
+            alt=""
+          />
+        </a>
+        <div class="price">690.000 ₫</div>
+        <div class="old-price">1.290.000 ₫</div>
+        <div class="discount">Giảm giá: -47%</div>
+        <div class="description">
+          Tai nghe Bluetooth HONOR Choice Earbuds X7e
+        </div>
+      </div>
+      <div class="product" data-price="2549000">
+        <a href="Loa.html">
+          <img
+            src="../Ảnh/2024_5_8_638507663083492456_QD35-black.jpg"
+            width="auto"
+            height="200"
+            alt=""
+          />
+        </a>
+        <div class="price">2.549.000 ₫</div>
+        <div class="old-price">2.690.000 ₫</div>
+        <div class="discount">Giảm giá: -5%</div>
+        <div class="description">Loa Bluetooth Edifier QD35</div>
+      </div>
+      <div class="product" data-price="499000">
+        <a href="TaingheAlpha.html">
+          <img
+            src="../Ảnh/Tai_nghe_Bluetooth_nhet_tai_Alpha_Works_CURVE_300_Den_1_247e78b880.jpg"
+            width="auto"
+            height="200"
+            alt=""
+          />
+        </a>
+        <div class="price">499.000 ₫</div>
+        <div class="old-price">599.000 ₫</div>
+        <div class="discount">Giảm giá: -17%</div>
+        <div class="description">Tai nghe Bluetooth Alpha Works CURVE300</div>
+      </div>
+      <div class="product" data-price="799000">
+        <a href="Pin.html">
+          <img
+            src="../Ảnh/2024_1_3_638399042457584676_z5002264419794_1858bff82fcb2caf75c73e6387949edd.jpg"
+            width="auto"
+            height="200"
+            alt=""
+          />
+        </a>
+        <div class="price">799.000 ₫</div>
+        <div class="old-price">999.000 ₫</div>
+        <div class="discount">Giảm giá: -20%</div>
+        <div class="description">Pin sạc dự phòng 20000mAh</div>
+      </div>
+      <div class="product" data-price="1286000">
+        <a href="Op.html">
+          <img
+            src="../Ảnh/Clear_Case_with_Magsafe_e255c5f04a.png"
+            width="auto"
+            height="200"
+            alt=""
+          />
+        </a>
+        <div class="price">1.286.000 ₫</div>
+        <div class="old-price">1.429.000 ₫</div>
+        <div class="discount">Giảm giá: -10%</div>
+        <div class="description">
+          Ốp lưng iPhone 16 Pro Max Clear Case with Magsafe
+        </div>
+      </div>
+    </div>
+
+    <div class="chatbox">
+      <div class="chat-header">
+        <span>💬 Hỗ trợ khách hàng</span>
+        <button class="chat-close">✖</button>
+      </div>
+      <div class="chat-body">
+        <div class="chat-messages"></div>
+        <div class="chat-input-container">
+          <input
+            type="text"
+            class="chat-input"
+            placeholder="Nhập tin nhắn..."
+          />
+          <button class="chat-send">Gửi</button>
+        </div>
+      </div>
+    </div>
+    <button class="chat-toggle">💬</button>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-column">
+          <h3>Chăm sóc khách hàng</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Thông tin về website</h3>
+          <p>Website bán các sản phẩm kỹ thuật số</p>
+          <p>📍 Địa chỉ: Trường Đại Học Tài chính - Ngân hàng Hà Nội</p>
+          <p>31 Dịch Vọng Hậu - Cầu Giấy - Hà Nội</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Phương Thức Thanh Toán</h3>
+          <p>💳 Thanh toán qua thẻ: Visa, MasterCard</p>
+          <p>🏦 Chuyển khoản ngân hàng</p>
+          <p>📲 Ví điện tử: Momo, ZaloPay</p>
+          <p>💰 Thanh toán khi nhận hàng (COD)</p>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <p>© 2025 KTSShop.com.vn. Tất cả quyền được bảo lưu.</p>
+        <p>Website được phát triển bởi nhóm 6 môn TMVNHDT. Liên hệ:</p>
+        <p>
+          <strong>Thành viên:</strong> Nguyễn Hữu Khánh - MSV: 2254800023 -
+          Email:
+          <a href="mailto:huukhanh1311@gmail.com">huukhanh1311@gmail.com</a> -
+          SĐT: 0982392452
+        </p>
+      </div>
+    </footer>
+    <script src="../Script/Phukien.js"></script>
+  </body>
+</html>
